@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+
+# Environment
+.env
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary files
+.tmp/
+
+# Skills (not needed in production)
+superpowers/
+ui-ux-pro-max-skill/
+marketingskills/
+
+# Planning & working docs (not for production)
+architecture/
+*.pdf
+findings.md
+progress.md
+task_plan.md
+gemini.md
+BLAST Framework
+
+# Unused images
+sam-portrait.png
+samimage1.jpg
+samimage2.jpg
