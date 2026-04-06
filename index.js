@@ -276,9 +276,11 @@ document.addEventListener('DOMContentLoaded', () => {
           throw new Error('Form submission failed');
         }
       } catch (error) {
-        // If Formspree is not configured yet, show success anyway for demo
-        form.style.display = 'none';
-        formSuccess.classList.add('is-visible');
+        // Show error message
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalText;
+        alert('Something went wrong sending your message. Please try again, or email sam@leithenlane.com directly.');
+        return;
       }
 
       // Reset button state
