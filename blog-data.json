@@ -1,0 +1,286 @@
+[
+  {
+    "slug": "connect-klaviyo-to-shopify",
+    "title": "How to Connect Klaviyo to Shopify (And Actually Make It Work)",
+    "metaDescription": "Most Shopify stores connect Klaviyo and stop there. Here's how to set up the integration properly so your email flows, segments, and data actually drive revenue.",
+    "keyword": "how to connect klaviyo to shopify",
+    "category": "Systems & Integration",
+    "date": "2026-04-06",
+    "readTime": "6 min read",
+    "sections": [
+      {
+        "content": "<p>Every Shopify store I've worked with has Klaviyo installed. Maybe half of them have it set up properly.</p><p>The basic integration takes about five minutes: install the app, sync your customers, done. But that's where most people stop, and it's exactly where the problems start.</p>"
+      },
+      {
+        "heading": "What the default integration gives you",
+        "content": "<p>When you connect Klaviyo to Shopify out of the box, you get customer syncing, order data, and some basic event tracking. It'll pull through things like \"Placed Order\" and \"Started Checkout.\" That's genuinely useful, but it's the bare minimum.</p><p>The trouble is, Klaviyo's default setup doesn't automatically build the segments or flows that actually make you money. You've got raw data flowing in, but nothing smart happening with it.</p>"
+      },
+      {
+        "heading": "What most stores get wrong",
+        "content": "<p>The biggest mistake I see is treating Klaviyo like a newsletter tool. You've got this incredibly powerful platform that can segment customers by purchase behaviour, predict churn, and trigger automations based on dozens of events, and people are using it to send a monthly \"here's what's new\" email to their entire list.</p><p>Here's what I typically find when I audit a Shopify-Klaviyo setup:</p><ul><li><strong>No proper welcome series.</strong> The default flow is either off or still using the template copy. Your welcome series is the highest-performing email sequence you'll ever send. It should introduce your brand, set expectations, and nudge toward a first purchase, not just say \"thanks for signing up.\"</li><li><strong>Abandoned cart flow, but nothing else.</strong> Cart abandonment is table stakes. Where's the browse abandonment flow? The post-purchase follow-up? The win-back sequence for customers who haven't bought in 90 days?</li><li><strong>One big list, no segments.</strong> If you're sending the same email to someone who bought yesterday and someone who hasn't opened an email in six months, you're tanking your deliverability and annoying your best customers.</li><li><strong>Product data not flowing properly.</strong> Klaviyo can pull your entire product catalogue from Shopify and use it for dynamic recommendations, back-in-stock alerts, and cross-sell flows. But the catalogue sync needs to be configured correctly: product feeds, custom properties, variant data. Most stores haven't touched this.</li></ul>"
+      },
+      {
+        "heading": "How to set it up properly",
+        "content": "<p>Start with the integration itself. Make sure you're syncing:</p><ul><li>Customer profiles (including tags and custom properties from Shopify)</li><li>Full order history (not just recent orders)</li><li>Product catalogue with images, descriptions, and variant data</li><li>On-site tracking via the Klaviyo snippet (not just the app)</li></ul><p>Then build your core flows in this order:</p><ol><li><strong>Welcome series</strong> (3-5 emails, introduce the brand, social proof, first-purchase incentive)</li><li><strong>Abandoned cart</strong> (2-3 emails, first at 1 hour, second at 24 hours)</li><li><strong>Browse abandonment</strong> (triggered when someone views a product but doesn't add to cart)</li><li><strong>Post-purchase</strong> (thank you, how-to/care instructions, review request, cross-sell)</li><li><strong>Win-back</strong> (re-engage lapsed customers at 60, 90, 120 days)</li></ol><p>Finally, set up your foundational segments:</p><ul><li>Engaged subscribers (opened or clicked in last 90 days)</li><li>VIP customers (top 10% by revenue)</li><li>At-risk customers (purchased before, no activity in 60+ days)</li><li>Never purchased (on the list but haven't bought)</li></ul><p>This isn't a one-afternoon job, but it's not months of work either. If you're systematic about it, you can have a genuinely revenue-driving Klaviyo setup within a couple of weeks.</p>"
+      },
+      {
+        "heading": "The difference it makes",
+        "content": "<p>I've seen stores go from Klaviyo generating 5% of their revenue to over 30% just by building out proper flows and segments. That's not extra ad spend, not a new product launch. Just making the tool you're already paying for actually do its job.</p><p>If your Klaviyo-Shopify integration feels like it's ticking along but not really performing, it's probably because it was set up at the \"good enough\" level. And good enough is leaving money on the table.</p>"
+      }
+    ],
+    "cta": "I help e-commerce startups get their Klaviyo and Shopify working properly together, not just connected, but actually driving revenue. Book a free consultation if you want someone to take a look at yours."
+  },
+  {
+    "slug": "how-to-choose-a-3pl-for-ecommerce",
+    "title": "How to Choose a 3PL for Your E-commerce Business (From Someone Who's Done It)",
+    "metaDescription": "Choosing the wrong 3PL can cost you customers and margins. Here's a practical guide to evaluating fulfilment partners, from someone who's managed the transition firsthand.",
+    "keyword": "how to choose a 3pl for ecommerce",
+    "category": "Fulfilment & Logistics",
+    "date": "2026-04-06",
+    "readTime": "7 min read",
+    "sections": [
+      {
+        "content": "<p>Choosing a 3PL is one of those decisions that feels like it should be straightforward but absolutely isn't. I've been through this process multiple times, both for my own DTC brand and with clients, and I've learned the hard way that the flashy sales pitch rarely matches the day-to-day reality.</p>"
+      },
+      {
+        "heading": "When it's actually time to switch to a 3PL",
+        "content": "<p>Not every business needs a 3PL. If you're shipping 20 orders a day from your spare room and it's working, there's no rush. But when fulfilment starts eating into your time so much that you can't focus on growth, or when you're turning down wholesale opportunities because you can't handle the volume, that's when it's time.</p><p>The tipping point is usually somewhere between 50-150 orders per day, depending on your product complexity. If you've got simple SKUs and standard packaging, you can push the in-house model further. If you've got kitting, subscriptions, or custom inserts, the complexity pushes you toward a 3PL sooner.</p>"
+      },
+      {
+        "heading": "What to actually evaluate",
+        "content": "<p>Forget the glossy capability decks. Here's what actually matters:</p><ul><li><strong>Location relative to your customers.</strong> Where are most of your orders going? A 3PL based in the Midlands makes sense for broad UK coverage. If 40% of your orders go to London, maybe a site closer to the M25 is worth the slightly higher per-unit cost because you'll save on shipping.</li><li><strong>Tech integration.</strong> Can they plug directly into your Shopify store? Do they support Recharge for subscriptions? What does the integration actually look like? Is it a proper API connection or are they downloading CSV orders twice a day? Real-time sync matters more than you think.</li><li><strong>Minimums and pricing structure.</strong> Some 3PLs charge per pick, some per order, some a flat monthly fee. Understand the model and run the numbers on YOUR average order. A cheap per-pick rate is useless if your average order has 4 items and they charge per pick.</li><li><strong>Error rates.</strong> Ask them directly: what's your mis-pick rate? What's your damage rate? Then ask for references and check. A 2% error rate sounds small until you realise that's 20 angry customers per 1,000 orders.</li><li><strong>Flexibility.</strong> Can they handle seasonal spikes? What happens at Black Friday? Will they do custom packaging, handwritten notes, or marketing inserts? Some 3PLs are brilliant at standard fulfilment but fall apart when you need anything bespoke.</li></ul>"
+      },
+      {
+        "heading": "The questions nobody thinks to ask",
+        "content": "<ul><li>What happens when something goes wrong? What's the escalation process? Who's my day-to-day contact?</li><li>How do you handle returns? Is there a grading process or does everything go back to shelf?</li><li>What's the onboarding timeline? (If they say less than 2 weeks, be sceptical.)</li><li>Can I visit the warehouse before signing? (If they say no, walk away.)</li></ul>"
+      },
+      {
+        "heading": "Red flags I've seen",
+        "content": "<ul><li>No dedicated account manager, and you're just emailing a generic inbox.</li><li>They can't clearly explain their billing structure.</li><li>Their tech platform looks like it was built in 2008.</li><li>They won't share current client references in your product category.</li><li>They charge penalties for low volume months.</li></ul>"
+      },
+      {
+        "heading": "How to run a proper evaluation",
+        "content": "<p>Don't just go with the first one that quotes you. Shortlist 3-4, visit at least 2 in person, and run a trial period with your actual products if possible. Send test orders. See how they handle a mis-pick. Test their customer service response time.</p><p>The right 3PL becomes a genuine partner in your business. The wrong one becomes an expensive headache that your customers feel every day.</p>"
+      }
+    ],
+    "cta": "Choosing a 3PL is a big decision with a lot of hidden complexity. I've managed these transitions from start to finish and I know what to look for. Book a free call and I'll help you figure out the right move."
+  },
+  {
+    "slug": "start-a-subscription-box-on-shopify",
+    "title": "How to Start a Subscription Box on Shopify (The Operations Side Nobody Talks About)",
+    "metaDescription": "Everyone talks about the marketing. Nobody talks about the operational nightmare of running subscriptions. Here's what actually goes into launching a Shopify subscription box.",
+    "keyword": "how to start a subscription box on shopify",
+    "category": "Systems & Integration",
+    "date": "2026-04-06",
+    "readTime": "7 min read",
+    "sections": [
+      {
+        "content": "<p>I co-founded a subscription box business, so I know exactly how this goes. You get excited about the recurring revenue model, set up Recharge or one of the other subscription apps, and then reality hits: subscriptions are an operations challenge disguised as a marketing opportunity.</p>"
+      },
+      {
+        "heading": "The bit everyone skips: operational readiness",
+        "content": "<p>Before you think about your first box, you need to answer these questions honestly:</p><ul><li>Can your fulfilment handle a spike of orders that all need to ship in the same 48-hour window?</li><li>Do you have enough product depth to keep the box interesting month after month?</li><li>What happens when someone wants to skip, pause, swap a product, or change their delivery date? Can your systems handle that without manual intervention?</li></ul><p>If the answer to any of these is \"not really,\" you've got work to do before launch.</p>"
+      },
+      {
+        "heading": "Recharge vs Loop vs other Shopify subscription apps",
+        "content": "<p>Recharge is the market leader for a reason: it's robust, well-integrated with Shopify, and handles complex subscription logic. But it's also more expensive and has a steeper setup curve. Loop and other newer apps are catching up fast with slicker interfaces and better customer portal experiences.</p><p>My advice: choose based on your complexity. If you're doing simple subscribe-and-save on existing products, Loop or even Shopify's native subscriptions might be enough. If you're doing curated boxes with swappable products, gift subscriptions, and prepaid plans, Recharge is worth the investment.</p><p>Whatever you choose, the integration with Shopify needs to be airtight. Subscription orders should flow into your fulfilment pipeline exactly like regular orders, with clear tagging so your warehouse (or 3PL) knows what's a subscription and what isn't.</p>"
+      },
+      {
+        "heading": "The operational workflow that actually works",
+        "content": "<p>Here's the monthly cadence I've used and refined:</p><ol><li><strong>Subscription billing window (Day 1-3):</strong> All active subscriptions are charged. Failed payments trigger a retry sequence, typically 3 attempts over 7 days with email notifications at each stage. You'll lose 5-10% of subscribers to failed payments if you don't have a proper dunning sequence.</li><li><strong>Order compilation (Day 3-4):</strong> All successful orders are compiled, tagged, and sent to fulfilment. This is where your SKU structure matters. If your box has 5 items and 3 of them change monthly, your pick sheets need to reflect that clearly.</li><li><strong>Packing and shipping (Day 4-7):</strong> The wave of orders goes out. If you're using a 3PL, they need advance notice of volumes and any changes to the box contents. Don't spring a new SKU on them the day before shipping.</li><li><strong>Customer service window (Day 7-14):</strong> This is when the emails come in. \"Where's my box?\" \"I was charged but I thought I paused.\" \"There's an item missing.\" Have templated responses ready and make sure your CS team has access to subscription management tools so they can actually resolve issues.</li><li><strong>Churn analysis (Day 14-30):</strong> Who cancelled? Why? What's your churn rate trending? If you're not tracking this monthly, you're flying blind.</li></ol>"
+      },
+      {
+        "heading": "The metrics that matter",
+        "content": "<ul><li><strong>Monthly churn rate:</strong> Anything above 10% is a red flag. Best-in-class subscription businesses sit at 3-5%.</li><li><strong>Failed payment recovery rate:</strong> You should be recovering at least 50% of initially failed payments through your dunning sequence.</li><li><strong>Customer lifetime value:</strong> How many months does the average subscriber stay? Multiply by your margin per box. That's what you can afford to spend on acquisition.</li><li><strong>Net subscriber growth:</strong> New subscribers minus churned subscribers. If this number isn't consistently positive, you don't have a subscription business, you have a leaky bucket.</li></ul>"
+      },
+      {
+        "heading": "The honest truth about subscriptions",
+        "content": "<p>Recurring revenue is brilliant when it works. But the operational overhead is real. You're committing to delivering something excellent every single month, handling the complexity of recurring billing, managing customer expectations, and doing it all profitably.</p><p>It's absolutely doable; I've done it. But go in with your eyes open about the operational requirements, not just the revenue projections.</p>"
+      }
+    ],
+    "cta": "I built and ran a subscription business from scratch on Shopify and Recharge. If you're thinking about launching one, or yours isn't running as smoothly as it should, let's have a chat."
+  },
+  {
+    "slug": "ecommerce-unit-economics-explained",
+    "title": "E-commerce Unit Economics Explained (Stop Guessing If You're Profitable)",
+    "metaDescription": "Revenue is vanity, profit is sanity. Here's how to calculate your real unit economics so you know exactly which products and channels are actually making you money.",
+    "keyword": "ecommerce unit economics explained",
+    "category": "Commercial & Profitability",
+    "date": "2026-04-06",
+    "readTime": "7 min read",
+    "sections": [
+      {
+        "content": "<p>I can't tell you how many Shopify store owners I've spoken to who can tell me their revenue to the penny but have no idea whether they're actually profitable. Revenue is the easy number. Profit is the one that matters, and it lives in your unit economics.</p>"
+      },
+      {
+        "heading": "What are unit economics?",
+        "content": "<p>In plain English: how much money do you make (or lose) on each unit you sell? Not on a good month when everything goes right, but on average, including all the costs that are easy to forget about.</p>"
+      },
+      {
+        "heading": "The real cost of selling a product",
+        "content": "<p>Let's walk through a real example. Say you sell a candle for £28.</p><p>Most founders will tell me their cost price is £6, so they're making £22 margin. Brilliant, right? Not so fast.</p><p>Here's what the actual breakdown usually looks like:</p><table><thead><tr><th>Cost</th><th>Amount</th></tr></thead><tbody><tr><td>Product cost (COGS)</td><td>£6.00</td></tr><tr><td>Packaging &amp; inserts</td><td>£1.80</td></tr><tr><td>Fulfilment (pick, pack, labour)</td><td>£2.50</td></tr><tr><td>Shipping to customer</td><td>£3.95</td></tr><tr><td>Payment processing (Stripe/Shopify Payments)</td><td>£0.95</td></tr><tr><td>Shopify subscription (allocated per order)</td><td>£0.30</td></tr><tr><td>Returns &amp; replacements (allocated avg)</td><td>£1.10</td></tr><tr><td><strong>Total cost per unit</strong></td><td><strong>£16.60</strong></td></tr><tr><td><strong>True margin per unit</strong></td><td><strong>£11.40</strong></td></tr></tbody></table><p>That £22 \"margin\" just became £11.40. And we haven't even touched marketing costs yet.</p>"
+      },
+      {
+        "heading": "Contribution margin: the number you actually need",
+        "content": "<p>Contribution margin is your revenue minus ALL variable costs, meaning everything that scales with each order. It's the money left over that contributes to covering your fixed costs (rent, salaries, software) and, hopefully, profit.</p><p>The formula:<br><strong>Contribution margin = Selling price − COGS − Packaging − Fulfilment − Shipping − Payment fees − Returns allocation</strong></p><p>Once you know this number per product, per channel, and per customer segment, you can make real decisions:</p><ul><li><strong>Which products are worth promoting?</strong> That premium candle with a 40% contribution margin? Push it. That discounted bundle you created for Black Friday with a 12% margin? Maybe don't make it permanent.</li><li><strong>Which channels are profitable?</strong> If your contribution margin on a product is £11.40 and it costs you £15 in ad spend to acquire that customer through Meta, you're losing money on the first purchase. That's only okay if you know your repeat purchase rate makes up for it.</li><li><strong>When is a discount too much?</strong> If your margin is £11.40 and you offer 20% off (£5.60 discount), your new margin is £5.80. Is that worth it for the volume increase? Sometimes yes, sometimes absolutely not. The point is you should know before you run the promotion.</li></ul>"
+      },
+      {
+        "heading": "Customer Acquisition Cost (CAC) and Lifetime Value (LTV)",
+        "content": "<p>These two numbers together tell you whether your business model works.</p><p><strong>CAC</strong> = Total marketing spend ÷ Number of new customers acquired</p><p><strong>LTV</strong> = Average order value × Average number of orders per customer × Contribution margin percentage</p><p>The general rule: your LTV should be at least 3x your CAC. If it isn't, you're either spending too much on acquisition or not doing enough to drive repeat purchases.</p><p>Most startups I work with have never calculated their LTV properly. They know their AOV, but they've never looked at purchase frequency or retention curves. When we do the analysis together, it usually reveals that a small percentage of customers generate a disproportionate amount of profit, and those are the customers worth investing in.</p>"
+      },
+      {
+        "heading": "How to actually track this",
+        "content": "<p>You don't need fancy BI tools to start. A well-structured spreadsheet works for most startups. Track:</p><ol><li><strong>COGS per SKU</strong> (update quarterly as supplier costs change)</li><li><strong>Fully loaded cost per order</strong> (including all variable costs)</li><li><strong>Contribution margin per product and per channel</strong></li><li><strong>CAC by channel</strong> (Meta, Google, organic, email, etc.)</li><li><strong>Cohort-based LTV</strong> (how much do customers acquired in January spend over 3, 6, 12 months?)</li></ol><p>Review monthly. Adjust quarterly. And never, ever run a promotion without knowing what it does to your margin.</p>"
+      }
+    ],
+    "cta": "If you're making revenue decisions on gut feel rather than actual numbers, it might be time for someone to dig into your unit economics. Book a free call and let's see where the real money is."
+  },
+  {
+    "slug": "shopify-email-automation-small-business",
+    "title": "Shopify Email Automation for Small Business: 5 Flows That Actually Drive Revenue",
+    "metaDescription": "You don't need a 50-email strategy. Here are the 5 essential automated email flows every small Shopify store should set up to recover revenue and drive repeat purchases.",
+    "keyword": "shopify email automation for small business",
+    "category": "Customer Experience",
+    "date": "2026-04-06",
+    "readTime": "8 min read",
+    "sections": [
+      {
+        "content": "<p>You don't need a 50-email marketing strategy. If you're a small Shopify business doing under £500k a year, you need five automated flows set up properly, and then you can leave them running while you focus on everything else.</p><p>I've set these up for multiple stores, and the pattern is always the same: the first month after turning them on, email revenue jumps noticeably. Not because the emails are revolutionary, but because they weren't being sent at all.</p>"
+      },
+      {
+        "heading": "Flow 1: Welcome Series",
+        "content": "<p><em>Expected revenue impact: 5-15% of email revenue</em></p><p>This triggers when someone signs up to your list, whether through a pop-up, footer form, or checkout opt-in. Most stores either don't have this or have a single \"thanks for subscribing\" email that does nothing.</p><p>Build a 4-email series:</p><ul><li><strong>Email 1 (Immediate):</strong> Welcome, deliver any promised incentive (discount code, free guide), introduce your brand story briefly.</li><li><strong>Email 2 (Day 2):</strong> Social proof: customer reviews, press mentions, UGC. Show them real people love your products.</li><li><strong>Email 3 (Day 4):</strong> Your best-sellers or \"start here\" products. Make it easy to buy.</li><li><strong>Email 4 (Day 7):</strong> Reminder of the incentive expiring (if applicable), or a \"still browsing?\" angle.</li></ul>"
+      },
+      {
+        "heading": "Flow 2: Abandoned Cart",
+        "content": "<p><em>Expected revenue impact: 5-10% of email revenue</em></p><p>This is the most common flow, but most implementations are weak. Don't just send one email saying \"you left something behind.\" That's lazy.</p><ul><li><strong>Email 1 (1 hour):</strong> Simple reminder with the product image. No discount yet. Subject line should be specific, not cute.</li><li><strong>Email 2 (24 hours):</strong> Address common objections. Free shipping? Easy returns? Payment plans? Whatever removes friction.</li><li><strong>Email 3 (48 hours):</strong> Last chance, and only now consider a small incentive if it fits your margins.</li></ul>"
+      },
+      {
+        "heading": "Flow 3: Post-Purchase",
+        "content": "<p><em>Expected revenue impact: builds loyalty, drives reviews and repeat purchases</em></p><p>The sale isn't the end, it's the start of the relationship. This flow does more for retention than almost anything else.</p><ul><li><strong>Email 1 (Day 1):</strong> Order confirmation is handled by Shopify, so this is your brand thank-you. Something genuine, not templated.</li><li><strong>Email 2 (Day 3-5):</strong> Product tips, care instructions, or how-to content. Show them how to get the most from what they bought.</li><li><strong>Email 3 (Day 10-14):</strong> Review request. Make it easy: one click to a review form, not a complicated process.</li><li><strong>Email 4 (Day 21-30):</strong> Cross-sell. Based on what they bought, what else would they like? Use Klaviyo's product recommendation engine here.</li></ul>"
+      },
+      {
+        "heading": "Flow 4: Browse Abandonment",
+        "content": "<p><em>Expected revenue impact: 2-5% of email revenue</em></p><p>This one is underused. It triggers when someone views a product page but doesn't add to cart. It's a softer touch than cart abandonment, because they showed interest but didn't commit.</p><ul><li><strong>Email 1 (2-4 hours):</strong> \"Still thinking about [product]?\" with the product image and a link back. Keep it simple.</li><li><strong>Email 2 (24 hours):</strong> Show related products or the product in context (lifestyle imagery, customer photos).</li></ul><p>Important: only trigger this for identified contacts (people who've opted in and are being tracked). Don't be creepy.</p>"
+      },
+      {
+        "heading": "Flow 5: Win-Back",
+        "content": "<p><em>Expected revenue impact: re-engages 3-8% of lapsed customers</em></p><p>Customers who bought once and disappeared. This flow tries to bring them back before they forget about you entirely.</p><ul><li><strong>Email 1 (60 days since last purchase):</strong> \"We miss you\" with a curated selection of what's new since they last shopped.</li><li><strong>Email 2 (90 days):</strong> Slightly more urgent. Include an incentive if you want, like a small discount or free shipping.</li><li><strong>Email 3 (120 days):</strong> Last email before they get moved to a suppressed segment. Be honest: \"We'll stop emailing you if we don't hear from you.\"</li></ul>"
+      },
+      {
+        "heading": "The maths that makes this worth it",
+        "content": "<p>If your store does £200k/year and email currently generates 5% of that (£10k), implementing these five flows properly can push email to 20-30% of revenue. That's an extra £30-50k from the same customer base, with no additional ad spend.</p><p>That's not a hypothetical. I've seen it happen repeatedly with stores that had basically no email automation beyond a newsletter.</p>"
+      }
+    ],
+    "cta": "I set up these exact flows for Shopify stores using Klaviyo. If your email automation is minimal or non-existent, let's talk about getting it sorted."
+  },
+  {
+    "slug": "when-to-hire-ecommerce-operations-manager",
+    "title": "When to Hire an E-commerce Operations Manager (And What to Do Before That)",
+    "metaDescription": "Hiring a full-time ops person too early burns cash. Too late and things break. Here's how to know when you're ready, and what to do in the meantime.",
+    "keyword": "when to hire ecommerce operations manager",
+    "category": "Scaling Operations",
+    "date": "2026-04-06",
+    "readTime": "7 min read",
+    "sections": [
+      {
+        "content": "<p>At some point, every e-commerce founder hits the wall. You're doing the marketing, managing the warehouse, answering customer emails, reconciling stock, negotiating with suppliers, and trying to work on the business instead of just in it. Something has to give.</p><p>The natural instinct is to hire someone. But hiring a full-time operations manager at the wrong time is one of the most expensive mistakes I see startups make.</p>"
+      },
+      {
+        "heading": "Signs you're not ready for a full-time hire",
+        "content": "<ul><li><strong>Revenue under £500k/year.</strong> A decent operations manager costs £35-50k plus NI, pension, equipment. At lower revenue levels, that's a huge chunk of your margin for a role that might not be full-time busy yet.</li><li><strong>You don't know what the role should actually do.</strong> If your job description is \"sort out everything operational,\" that's not a role, it's a wishlist. You need clarity before you hire.</li><li><strong>Your systems aren't in place yet.</strong> Hiring someone to manage chaos doesn't eliminate the chaos. They'll spend their first 6 months building the systems you should have built before hiring them.</li></ul>"
+      },
+      {
+        "heading": "What to do before you hire",
+        "content": "<p>This is where most founders skip steps, and it's exactly where I spend most of my time with clients.</p><ol><li><strong>Document your processes.</strong> Every repeatable task, from processing an order to handling a return to sending a restock PO to your supplier, should be written down, step by step. This isn't exciting work, but it's essential. You can't delegate what you haven't defined.</li><li><strong>Automate what you can.</strong> A surprising amount of operational work can be automated before you throw a human at it. Shopify Flow for order tagging and routing. Klaviyo for customer communications. Recharge for subscription management. Inventory alerts. Shipping rule automation. Spend a week setting these up properly and you'll eliminate hours of weekly manual work.</li><li><strong>Fix your tech stack.</strong> If your tools aren't talking to each other, an operations person is going to spend half their time on manual data entry and workarounds. Get your integrations right first.</li><li><strong>Use a fractional resource.</strong> This is the bit where I'm obviously biased, but it's genuinely the right answer for most startups between £200k-£1m in revenue. A consultant or fractional operator can come in, audit your operations, build the systems, and set you up so that when you do hire, that person walks into a functional operation, not a mess.</li></ol>"
+      },
+      {
+        "heading": "Signs you ARE ready for a full-time hire",
+        "content": "<ul><li>You're consistently doing £50k+ months and growing.</li><li>Your operational processes are documented and the role is clearly defined.</li><li>You need someone daily, not just for projects.</li><li>The cost of mistakes (stock-outs, shipping errors, slow customer responses) is measurably impacting revenue.</li><li>You've outgrown what automation and part-time support can handle.</li></ul>"
+      },
+      {
+        "heading": "What to look for in an operations hire",
+        "content": "<ul><li><strong>Shopify literacy.</strong> They don't need to be a developer, but they should be comfortable navigating Shopify admin, understanding order flows, and managing apps.</li><li><strong>Data comfort.</strong> They should be able to pull a report, build a spreadsheet, and make decisions based on numbers rather than gut feel.</li><li><strong>Systems thinking.</strong> The best operations people think in processes and workflows, not individual tasks. They see how one change ripples across the business.</li><li><strong>DTC experience.</strong> E-commerce operations are specific. Someone from traditional retail or logistics won't necessarily translate. Look for people who've worked in DTC, ideally at a similar stage to your business.</li></ul>"
+      },
+      {
+        "heading": "The transition plan",
+        "content": "<p>When you do hire, don't just hand everything over on day one. Plan a 90-day transition:</p><ul><li><strong>Month 1:</strong> Shadow and learn. They should understand every process before they own any.</li><li><strong>Month 2:</strong> Own specific areas (start with fulfilment or CS). You're still checking their work.</li><li><strong>Month 3:</strong> Full ownership with weekly check-ins. They should be flagging problems before you notice them.</li></ul>"
+      }
+    ],
+    "cta": "Not ready for a full-time hire but drowning in operational work? That's exactly the gap I fill. Book a free consultation and let's figure out what you need right now."
+  },
+  {
+    "slug": "recharge-shopify-setup-guide",
+    "title": "Recharge Shopify Setup Guide: Building Subscriptions That Actually Retain",
+    "metaDescription": "Setting up Recharge on Shopify is easy. Setting it up so customers don't churn after two months is harder. Here's a practical guide from someone who's run subscriptions.",
+    "keyword": "recharge shopify setup guide",
+    "category": "Systems & Integration",
+    "date": "2026-04-06",
+    "readTime": "7 min read",
+    "sections": [
+      {
+        "content": "<p>Recharge is the most popular subscription app on Shopify for good reason: it's flexible, well-supported, and handles complex subscription logic that Shopify's native tool can't. But installing it is the easy part. Configuring it to actually retain customers is where most stores fall short.</p><p>I ran a subscription business on Recharge for years. Here's what I learned about setting it up properly.</p>"
+      },
+      {
+        "heading": "Getting the basics right",
+        "content": "<p>When you install Recharge, you're going to be hit with a lot of configuration options. Focus on these first:</p><ul><li><strong>Subscription widget placement.</strong> The subscribe-and-save option should be prominent on your product page, not buried below the fold. Test it on mobile especially. Most stores treat the subscription option as an afterthought, and conversion rates reflect that.</li><li><strong>Discount structure.</strong> A 10-15% discount on the subscription price vs one-time is standard. But think carefully about whether you're discounting on the first order, every order, or with an escalating discount (5% on order 1, 10% on order 3, 15% on order 6+). Escalating discounts incentivise staying subscribed longer.</li><li><strong>Frequency options.</strong> Offer 2-3 frequency options that match how customers actually use your product. If you sell coffee, that might be weekly, fortnightly, or monthly. Don't offer 10 options, because decision paralysis kills conversion.</li><li><strong>Prepaid vs pay-as-you-go.</strong> Prepaid subscriptions (pay for 3 months upfront) lock in revenue and reduce churn dramatically. Offer both, with a small additional discount for prepaid plans.</li></ul>"
+      },
+      {
+        "heading": "The customer portal is make-or-break",
+        "content": "<p>This is the single most important thing I can tell you about Recharge: your customer portal experience determines your churn rate.</p><p>If customers can't easily log in and manage their subscription (skip a month, swap a product, change their delivery date) they'll cancel. Not because they don't like your product, but because cancelling is easier than figuring out the portal.</p><p>Recharge's newer \"Affinity\" portal theme is a massive improvement, but you should still customise it:</p><ul><li>Make \"skip this month\" as prominent as \"cancel.\" Most churned subscribers would have been happy just skipping. But if the only visible option is cancel, that's what they'll do.</li><li>Add a one-click product swap if you have multiple SKUs. Let them change flavours or scents without contacting support.</li><li>Show upcoming order dates clearly. Surprise charges are the #1 complaint I see in subscription businesses.</li><li>Build a cancellation flow with save offers (a free gift, a discount, or a pause option) before they confirm the cancellation.</li></ul>"
+      },
+      {
+        "heading": "Klaviyo integration is essential",
+        "content": "<p>Recharge has basic email notifications, but they're not great. Integrate with Klaviyo and build your transactional and lifecycle flows there:</p><ul><li><strong>Upcoming charge notification</strong> (3 days before): remind customers what's coming and give them a chance to modify.</li><li><strong>Failed payment sequence:</strong> 3-attempt retry with emails at each stage. You'll recover 40-60% of initially failed payments.</li><li><strong>Subscription milestone emails:</strong> celebrate their 3rd box, 6th box, 12th box. Small gestures that make people feel valued.</li><li><strong>Churn risk emails:</strong> if someone has skipped twice in a row, proactively reach out with a \"is everything okay?\" email.</li></ul>"
+      },
+      {
+        "heading": "Analytics you should watch weekly",
+        "content": "<ul><li><strong>Active subscriber count</strong> (net of new vs churned)</li><li><strong>Churn rate</strong> (total and by cohort: when are people cancelling?)</li><li><strong>Skip rate</strong> (high skip rates signal product fatigue or price sensitivity)</li><li><strong>Failed payment rate</strong> and recovery rate</li><li><strong>Average subscription lifetime</strong> (in months)</li></ul><p>If you're not tracking these weekly, you're guessing. And guessing doesn't build a sustainable subscription business.</p>"
+      }
+    ],
+    "cta": "I've built and managed Recharge subscriptions from scratch. If you're setting up subscriptions on Shopify or struggling with churn, let's talk."
+  },
+  {
+    "slug": "ecommerce-fulfilment-mistakes-to-avoid",
+    "title": "7 E-commerce Fulfilment Mistakes That Are Costing You Customers",
+    "metaDescription": "Fulfilment errors don't just cost money, they cost trust. Here are the 7 most common operational mistakes I see in e-commerce fulfilment and how to fix them.",
+    "keyword": "ecommerce fulfilment mistakes to avoid",
+    "category": "Fulfilment & Logistics",
+    "date": "2026-04-06",
+    "readTime": "7 min read",
+    "sections": [
+      {
+        "content": "<p>Fulfilment is the part of e-commerce that nobody sees until something goes wrong. And when it goes wrong, your customers feel it immediately. I've managed fulfilment in-house, through 3PLs, and via Amazon FBA, and these are the mistakes I see again and again.</p>"
+      },
+      {
+        "heading": "Mistake 1: No proper SKU system",
+        "content": "<p>If your SKUs are a random mix of supplier codes, colour abbreviations, and numbers you made up at 2am, your error rate will reflect that. A good SKU system is human-readable and logical:</p><p><code>CNDL-LAV-200G</code> tells your warehouse team exactly what to pick: candle, lavender, 200g.</p><p><code>X7829B</code> tells them nothing.</p><p>Invest an afternoon in standardising your SKUs. It prevents mis-picks, makes inventory counts faster, and helps you better analyse what's selling.</p>"
+      },
+      {
+        "heading": "Mistake 2: No quality control on packing",
+        "content": "<p>\"Ship and hope\" isn't a QC strategy. Every order should have a basic check before it goes in the box:</p><ul><li>Right product(s)?</li><li>Right quantity?</li><li>No damage?</li><li>Marketing inserts included?</li></ul><p>This takes 10-15 seconds per order and saves you the £8-12 cost of reshipping, plus the customer relationship damage. If you're using a 3PL, ask about their QC process. If they don't have one, that's a problem.</p>"
+      },
+      {
+        "heading": "Mistake 3: Ignoring packaging as a brand touchpoint",
+        "content": "<p>Your packaging is the only physical interaction most DTC customers have with your brand. A plain brown box with a packing slip tells them you don't care about the experience.</p><p>You don't need a £3 custom box. A branded tissue paper, a small thank-you card, or even a well-designed packing slip with a personal note goes a long way. The unboxing is a marketing moment, so treat it like one.</p>"
+      },
+      {
+        "heading": "Mistake 4: Manual inventory tracking",
+        "content": "<p>If you're tracking stock in a spreadsheet that gets updated \"when someone remembers,\" you will sell products you don't have. It's not a matter of if, it's when.</p><p>Your Shopify inventory should be your single source of truth, synced with your warehouse (or 3PL) in real time. If there's a lag, orders will go out for items that are already sold. Set up low-stock alerts so you're reordering proactively, not reactively.</p>"
+      },
+      {
+        "heading": "Mistake 5: One shipping option",
+        "content": "<p>Offering only standard delivery is leaving money on the table. Different customers have different needs:</p><ul><li><strong>Standard (3-5 days):</strong> Your base option.</li><li><strong>Express (1-2 days):</strong> Premium customers will happily pay extra. This can be a profit centre.</li><li><strong>Free shipping threshold:</strong> \"Free delivery over £40\" increases AOV reliably. Set the threshold just above your current average order value.</li></ul><p>Test your shipping options. I've seen stores increase AOV by 15-20% just by introducing a well-placed free shipping threshold.</p>"
+      },
+      {
+        "heading": "Mistake 6: Not tracking fulfilment metrics",
+        "content": "<p>What gets measured gets managed. Track these monthly at minimum:</p><ul><li><strong>Order accuracy rate</strong> (target: 99.5%+)</li><li><strong>Average time from order to dispatch</strong> (target: same day or next day)</li><li><strong>Shipping damage rate</strong> (target: under 1%)</li><li><strong>Customer complaint rate related to fulfilment</strong></li><li><strong>Return rate and reasons</strong></li></ul><p>If you're using a 3PL, hold them accountable to these metrics. Put them in the contract.</p>"
+      },
+      {
+        "heading": "Mistake 7: No returns process",
+        "content": "<p>Returns are inevitable in e-commerce. Having no clear process means your team improvises every time, which means inconsistent customer experience and stock that sits in a \"returns\" pile for weeks.</p><p>Build a simple returns workflow:</p><ol><li>Customer requests return (via email or a self-serve portal, as tools like Loop Returns integrate beautifully with Shopify)</li><li>Return authorised or denied based on clear criteria</li><li>Customer ships back with a prepaid label (your call whether you absorb this cost)</li><li>Item received, inspected, graded</li><li>Refund or exchange processed within 48 hours</li><li>Item restocked (if suitable) or written off</li></ol><p>Document it, train your team on it, and communicate it clearly to customers. A smooth returns experience is genuinely a competitive advantage, because people buy more confidently when they know returns are easy.</p>"
+      }
+    ],
+    "cta": "Fulfilment is one of those areas where small improvements have an outsized impact on customer satisfaction and profitability. If your fulfilment operations need tightening up, book a free call and let's go through it together."
+  }
+]
