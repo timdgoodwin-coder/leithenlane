@@ -190,7 +190,7 @@ function generatePost(post) {
         </div>
         <h1 class="blog-post__title">${post.title}</h1>
         <div class="blog-post__author">
-          <img src="/samportrait2.png" alt="Samantha Goodwin" class="blog-post__avatar" loading="lazy">
+          <img src="/samportrait3.jpg" alt="Samantha Goodwin" class="blog-post__avatar" loading="lazy">
           <div>
             <div class="blog-post__author-name">Samantha Goodwin</div>
             <div class="blog-post__author-role">Founder, Leithen Lane</div>
