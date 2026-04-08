@@ -320,6 +320,52 @@
   display: inline-flex;
 }
 
+/* ─── Quiz CTA Block ────────────────────────────────────── */
+
+.blog-post__quiz-cta {
+  margin-top: 3rem;
+}
+
+.blog-post__quiz-cta-inner {
+  background: var(--primary-light, #e8f0e7);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--primary, #2d5a27);
+  border-radius: 12px;
+  padding: 2rem 2.25rem;
+  text-align: left;
+}
+
+.blog-post__quiz-cta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--primary, #2d5a27);
+  margin-bottom: 0.75rem;
+}
+
+.blog-post__quiz-cta-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text, #1a1a1a);
+  margin: 0 0 0.5rem;
+  line-height: 1.3;
+}
+
+.blog-post__quiz-cta-text {
+  font-size: 0.95rem;
+  color: var(--text-muted, #555);
+  line-height: 1.65;
+  margin: 0 0 1.25rem;
+}
+
+.blog-post__quiz-cta-inner .btn {
+  display: inline-flex;
+}
+
 /* ─── Responsive ─────────────────────────────────────────── */
 
 @media (max-width: 768px) {
@@ -358,6 +404,10 @@
 
   .blog-post__cta-inner {
     padding: 1.75rem 1.25rem;
+  }
+
+  .blog-post__quiz-cta-inner {
+    padding: 1.5rem 1.25rem;
   }
 }
 
