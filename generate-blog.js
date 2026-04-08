@@ -27,6 +27,16 @@ function ensureDir(dir) {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 }
 
+const GA_TAG = `
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-79K70YMPTB"><\/script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-79K70YMPTB');
+  <\/script>`;
+
 // ─── Shared HTML fragments ─────────────────────────────────────────────────
 
 const NAV = `
@@ -170,6 +180,7 @@ function generatePost(post) {
   <link rel="stylesheet" href="/index.css">
   <link rel="stylesheet" href="/blog.css">
   <script type="application/ld+json">${articleSchema(post)}</script>
+  ${GA_TAG}
 </head>
 <body>
   ${NAV}
@@ -254,6 +265,7 @@ function generateIndex(posts) {
   <link rel="stylesheet" href="/index.css">
   <link rel="stylesheet" href="/blog.css">
   <script type="application/ld+json">${blogListingSchema(posts)}</script>
+  ${GA_TAG}
 </head>
 <body>
   ${NAV}
