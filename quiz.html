@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Operations Health Score | Leithen Lane</title>
+  <meta name="description" content="Take the free E-commerce Operations Health Score quiz to find out where your business stands — and where the gaps are holding you back.">
+  <meta name="author" content="Samantha Goodwin">
+  <meta property="og:title" content="E-commerce Operations Health Score | Leithen Lane">
+  <meta property="og:description" content="Score your e-commerce operations across 5 key areas. Find the gaps before they cost you.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://leithenlane.com/quiz.html">
+  <link rel="canonical" href="https://leithenlane.com/quiz.html">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-79K70YMPTB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-79K70YMPTB');
+  </script>
+
+  <style>
+    /* ========== RESET & BASE ========== */
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --green: #2d5a27;
+      --green-light: #e8f0e7;
+      --green-mid: #4a8a42;
+      --green-pale: #f4f8f3;
+      --text-primary: #1a1a1a;
+      --text-secondary: #555;
+      --text-muted: #888;
+      --border: #e0e0e0;
+      --bg: #ffffff;
+      --bg-alt: #fafafa;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+      --shadow-lg: 0 8px 30px rgba(0,0,0,0.12);
+      --radius: 12px;
+      --radius-sm: 8px;
+      --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+      /* Score band colours */
+      --band-critical: #c0392b;
+      --band-needs-work: #e67e22;
+      --band-good: #27ae60;
+      --band-excellent: #2d5a27;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--text-primary);
+      background: var(--bg);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ========== LAYOUT ========== */
+    .container {
+      width: 100%;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ========== NAV (minimal) ========== */
+    .nav {
+      padding: 16px 0;
+      border-bottom: 1px solid var(--border);
+      background: var(--bg);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .nav__logo {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--green);
+      text-decoration: none;
+      letter-spacing: -0.3px;
+    }
+
+    .nav__logo span {
+      font-weight: 400;
+      color: var(--text-secondary);
+    }
+
+    .nav__back {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color var(--transition);
+    }
+
+    .nav__back:hover {
+      color: var(--green);
+    }
+
+    /* ========== INTRO SCREEN ========== */
+    .intro {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .intro__icon {
+      width: 64px;
+      height: 64px;
+      background: var(--green-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+      color: var(--green);
+    }
+
+    .intro__title {
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+      color: var(--text-primary);
+      line-height: 1.2;
+    }
+
+    .intro__desc {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      max-width: 480px;
+      margin: 0 auto 8px;
+    }
+
+    .intro__meta {
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+    }
+
+    .intro__categories {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      margin-bottom: 32px;
+    }
+
+    .intro__tag {
+      font-size: 0.8125rem;
+      font-weight: 500;
+      color: var(--green);
+      background: var(--green-light);
+      padding: 6px 14px;
+      border-radius: 100px;
+    }
+
+    /* ========== BUTTONS ========== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 14px 32px;
+      border-radius: var(--radius-sm);
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all var(--transition);
+    }
+
+    .btn--primary {
+      background: var(--green);
+      color: #fff;
+    }
+
+    .btn--primary:hover {
+      background: #224a1e;
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .btn--secondary {
+      background: var(--green-light);
+      color: var(--green);
+    }
+
+    .btn--secondary:hover {
+      background: #d9ebd7;
+    }
+
+    .btn--large {
+      padding: 16px 40px;
+      font-size: 1.0625rem;
+    }
+
+    .btn--full {
+      width: 100%;
+    }
+
+    .btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    /* ========== PROGRESS BAR ========== */
+    .progress {
+      padding: 20px 0 0;
+    }
+
+    .progress__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .progress__label {
+      font-size: 0.8125rem;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    .progress__count {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--green);
+    }
+
+    .progress__bar {
+      width: 100%;
+      height: 6px;
+      background: var(--green-light);
+      border-radius: 100px;
+      overflow: hidden;
+    }
+
+    .progress__fill {
+      height: 100%;
+      background: var(--green);
+      border-radius: 100px;
+      transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      width: 0%;
+    }
+
+    /* ========== QUIZ SCREEN ========== */
+    .quiz {
+      flex: 1;
+      display: none;
+      flex-direction: column;
+      padding-bottom: 40px;
+    }
+
+    .quiz.active { display: flex; }
+
+    .question-area {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 32px 0;
+    }
+
+    .question__category {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--green);
+      margin-bottom: 12px;
+    }
+
+    .question__text {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      line-height: 1.4;
+      margin-bottom: 28px;
+      letter-spacing: -0.3px;
+    }
+
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .option {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 16px 18px;
+      background: var(--bg);
+      border: 2px solid var(--border);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: all var(--transition);
+      text-align: left;
+    }
+
+    .option:hover {
+      border-color: var(--green-mid);
+      background: var(--green-pale);
+    }
+
+    .option.selected {
+      border-color: var(--green);
+      background: var(--green-light);
+    }
+
+    .option__radio {
+      width: 22px;
+      height: 22px;
+      border: 2px solid var(--border);
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-top: 1px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all var(--transition);
+    }
+
+    .option.selected .option__radio {
+      border-color: var(--green);
+      background: var(--green);
+    }
+
+    .option.selected .option__radio::after {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: #fff;
+      border-radius: 50%;
+    }
+
+    .option__text {
+      font-size: 0.9375rem;
+      color: var(--text-primary);
+      line-height: 1.5;
+    }
+
+    .option.selected .option__text {
+      font-weight: 500;
+    }
+
+    /* ========== NAV BUTTONS ========== */
+    .quiz-nav {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+    }
+
+    .quiz-nav .btn--back {
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      padding: 12px 24px;
+    }
+
+    .quiz-nav .btn--back:hover {
+      border-color: var(--text-secondary);
+      background: var(--bg-alt);
+    }
+
+    .quiz-nav .btn--next {
+      margin-left: auto;
+    }
+
+    /* ========== RESULTS SCREEN ========== */
+    .results {
+      flex: 1;
+      display: none;
+      flex-direction: column;
+      padding: 40px 0;
+    }
+
+    .results.active { display: flex; }
+
+    .results__header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .results__title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+
+    .results__subtitle {
+      font-size: 0.9375rem;
+      color: var(--text-secondary);
+    }
+
+    /* Blurred wrapper */
+    .results__gated {
+      position: relative;
+    }
+
+    .results__blur {
+      transition: filter 0.6s ease, opacity 0.6s ease;
+    }
+
+    .results__blur.blurred {
+      filter: blur(8px);
+      user-select: none;
+      pointer-events: none;
+    }
+
+    /* Gate overlay */
+    .results__gate {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      padding: 20px;
+    }
+
+    .results__gate.hidden {
+      display: none;
+    }
+
+    .gate-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px 28px;
+      max-width: 420px;
+      width: 100%;
+      box-shadow: var(--shadow-lg);
+      text-align: center;
+    }
+
+    .gate-card__icon {
+      width: 48px;
+      height: 48px;
+      background: var(--green-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+      color: var(--green);
+    }
+
+    .gate-card__title {
+      font-size: 1.125rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .gate-card__desc {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      margin-bottom: 24px;
+    }
+
+    .gate-form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      text-align: left;
+    }
+
+    .gate-form__group {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .gate-form__label {
+      font-size: 0.8125rem;
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+
+    .gate-form__input {
+      font-family: inherit;
+      font-size: 0.9375rem;
+      padding: 12px 14px;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-sm);
+      background: var(--bg);
+      color: var(--text-primary);
+      transition: border-color var(--transition);
+      outline: none;
+    }
+
+    .gate-form__input:focus {
+      border-color: var(--green);
+    }
+
+    .gate-form__input.error {
+      border-color: var(--band-critical);
+    }
+
+    .gate-form__error {
+      font-size: 0.75rem;
+      color: var(--band-critical);
+      display: none;
+    }
+
+    .gate-form__error.visible {
+      display: block;
+    }
+
+    .gate-form__note {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-align: center;
+      margin-top: 4px;
+    }
+
+    /* ========== SCORE DISPLAY ========== */
+    .score-overview {
+      text-align: center;
+      padding: 32px 24px;
+      background: var(--bg-alt);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      margin-bottom: 28px;
+    }
+
+    .score-circle {
+      width: 140px;
+      height: 140px;
+      margin: 0 auto 20px;
+      position: relative;
+    }
+
+    .score-circle svg {
+      transform: rotate(-90deg);
+      width: 100%;
+      height: 100%;
+    }
+
+    .score-circle__bg {
+      fill: none;
+      stroke: var(--green-light);
+      stroke-width: 8;
+    }
+
+    .score-circle__fill {
+      fill: none;
+      stroke-width: 8;
+      stroke-linecap: round;
+      transition: stroke-dashoffset 1.2s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.4s ease;
+    }
+
+    .score-circle__value {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .score-circle__number {
+      font-size: 2.25rem;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+    .score-circle__max {
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .score-band {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      padding: 8px 20px;
+      border-radius: 100px;
+      margin-bottom: 12px;
+    }
+
+    .score-band--critical {
+      background: #fde8e5;
+      color: var(--band-critical);
+    }
+
+    .score-band--needs-work {
+      background: #fef0e0;
+      color: var(--band-needs-work);
+    }
+
+    .score-band--good {
+      background: #e4f5ec;
+      color: var(--band-good);
+    }
+
+    .score-band--excellent {
+      background: var(--green-light);
+      color: var(--band-excellent);
+    }
+
+    .score-summary {
+      font-size: 0.9375rem;
+      color: var(--text-secondary);
+      max-width: 440px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* ========== CATEGORY BREAKDOWN ========== */
+    .breakdown {
+      margin-bottom: 32px;
+    }
+
+    .breakdown__title {
+      font-size: 1.0625rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      letter-spacing: -0.3px;
+    }
+
+    .breakdown__item {
+      margin-bottom: 18px;
+    }
+
+    .breakdown__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 6px;
+    }
+
+    .breakdown__name {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+
+    .breakdown__score {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+    }
+
+    .breakdown__bar {
+      width: 100%;
+      height: 10px;
+      background: var(--green-light);
+      border-radius: 100px;
+      overflow: hidden;
+    }
+
+    .breakdown__fill {
+      height: 100%;
+      border-radius: 100px;
+      transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+      width: 0%;
+    }
+
+    .breakdown__fill--critical { background: var(--band-critical); }
+    .breakdown__fill--needs-work { background: var(--band-needs-work); }
+    .breakdown__fill--good { background: var(--band-good); }
+    .breakdown__fill--excellent { background: var(--band-excellent); }
+
+    /* ========== CTA AT END ========== */
+    .results__cta {
+      text-align: center;
+      padding: 28px 24px;
+      background: var(--green-pale);
+      border-radius: var(--radius);
+      border: 1px solid var(--green-light);
+    }
+
+    .results__cta-title {
+      font-size: 1.125rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .results__cta-text {
+      font-size: 0.9375rem;
+      color: var(--text-secondary);
+      margin-bottom: 20px;
+    }
+
+    /* ========== SCREEN VISIBILITY ========== */
+    .screen { display: none; }
+    .screen.active { display: flex; }
+
+    /* ========== ANIMATIONS ========== */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-in {
+      animation: fadeInUp 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+
+    /* ========== FOOTER ========== */
+    .footer {
+      padding: 24px 0;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      margin-top: auto;
+    }
+
+    .footer__text {
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+    }
+
+    .footer__text a {
+      color: var(--green);
+      text-decoration: none;
+    }
+
+    .footer__text a:hover {
+      text-decoration: underline;
+    }
+
+    /* ========== RESPONSIVE ========== */
+    @media (min-width: 640px) {
+      .intro__title {
+        font-size: 2.125rem;
+      }
+
+      .question__text {
+        font-size: 1.375rem;
+      }
+
+      .gate-card {
+        padding: 40px 36px;
+      }
+
+      .score-circle {
+        width: 160px;
+        height: 160px;
+      }
+
+      .score-circle__number {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <nav class="nav" role="navigation" aria-label="Quiz navigation">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo" aria-label="Leithen Lane home">Leithen <span>Lane</span></a>
+      <a href="/" class="nav__back">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+        Back to site
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== INTRO SCREEN ========== -->
+  <main class="container">
+    <section class="intro screen active" id="intro-screen">
+      <div>
+        <div class="intro__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <h1 class="intro__title">E-commerce Operations<br>Health Score</h1>
+        <p class="intro__desc">Answer 13 quick questions to score your operations across 5 key areas. Find out what's working, what's not, and where the gaps are costing you.</p>
+        <p class="intro__meta">Takes about 3 minutes · Completely free</p>
+        <div class="intro__categories">
+          <span class="intro__tag">Order Fulfillment</span>
+          <span class="intro__tag">Inventory Management</span>
+          <span class="intro__tag">Customer Experience</span>
+          <span class="intro__tag">Tech & Automation</span>
+          <span class="intro__tag">Financial Operations</span>
+        </div>
+        <button class="btn btn--primary btn--large" id="start-quiz">
+          Start the Quiz
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ========== QUIZ SCREEN ========== -->
+    <section class="quiz screen" id="quiz-screen">
+      <div class="progress">
+        <div class="progress__header">
+          <span class="progress__label" id="progress-category"></span>
+          <span class="progress__count" id="progress-count"></span>
+        </div>
+        <div class="progress__bar">
+          <div class="progress__fill" id="progress-fill"></div>
+        </div>
+      </div>
+
+      <div class="question-area" id="question-area">
+        <!-- Populated by JS -->
+      </div>
+
+      <div class="quiz-nav">
+        <button class="btn btn--back" id="btn-back">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          Back
+        </button>
+        <button class="btn btn--primary btn--next" id="btn-next" disabled>
+          Next
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ========== RESULTS SCREEN ========== -->
+    <section class="results screen" id="results-screen">
+      <div class="results__header">
+        <h2 class="results__title">Your Results Are Ready</h2>
+        <p class="results__subtitle">Enter your details below to unlock your full report.</p>
+      </div>
+
+      <div class="results__gated">
+        <!-- Gate overlay -->
+        <div class="results__gate" id="results-gate">
+          <div class="gate-card">
+            <div class="gate-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <h3 class="gate-card__title">Unlock Your Full Report</h3>
+            <p class="gate-card__desc">See your overall score, band rating, and a per-category breakdown with personalised insights.</p>
+            <form class="gate-form" id="gate-form" novalidate>
+              <div class="gate-form__group">
+                <label class="gate-form__label" for="lead-name">Name</label>
+                <input class="gate-form__input" type="text" id="lead-name" name="name" placeholder="Your name" required autocomplete="name">
+                <span class="gate-form__error" id="lead-name-error">Please enter your name</span>
+              </div>
+              <div class="gate-form__group">
+                <label class="gate-form__label" for="lead-email">Email</label>
+                <input class="gate-form__input" type="email" id="lead-email" name="email" placeholder="you@company.com" required autocomplete="email">
+                <span class="gate-form__error" id="lead-email-error">Please enter a valid email address</span>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full" id="gate-submit">
+                See My Results
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 5-5 5 5 0 0 1 5 5v4"/></svg>
+              </button>
+              <p class="gate-form__note">No spam, ever. Just your results and a few helpful tips.</p>
+            </form>
+          </div>
+        </div>
+
+        <!-- Blurred results content -->
+        <div class="results__blur blurred" id="results-content">
+          <!-- Score overview -->
+          <div class="score-overview" id="score-overview">
+            <div class="score-circle">
+              <svg viewBox="0 0 120 120">
+                <circle class="score-circle__bg" cx="60" cy="60" r="52"/>
+                <circle class="score-circle__fill" id="score-arc" cx="60" cy="60" r="52"/>
+              </svg>
+              <div class="score-circle__value">
+                <span class="score-circle__number" id="score-number">0</span>
+                <span class="score-circle__max">out of 39</span>
+              </div>
+            </div>
+            <div id="score-band-container"></div>
+            <p class="score-summary" id="score-summary"></p>
+          </div>
+
+          <!-- Category breakdown -->
+          <div class="breakdown" id="breakdown">
+            <h3 class="breakdown__title">Category Breakdown</h3>
+            <!-- Populated by JS -->
+          </div>
+
+          <!-- CTA -->
+          <div class="results__cta">
+            <h3 class="results__cta-title">Want help closing the gaps?</h3>
+            <p class="results__cta-text">I help e-commerce startups fix exactly these kinds of operational issues. Let's have a chat about where you're at.</p>
+            <a href="https://leithenlane.com/#contact" class="btn btn--primary">
+              Book a Free Consultation
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <p class="footer__text">&copy; 2026 <a href="https://leithenlane.com">Leithen Lane</a>. All rights reserved.</p>
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    (function() {
+      'use strict';
+
+      // ==========================================
+      // QUIZ DATA — 13 questions, 5 categories
+      // ==========================================
+      const questions = [
+        // ── Order Fulfillment (3 questions) ──
+        {
+          category: 'Order Fulfillment',
+          text: 'How would you describe your current order fulfillment process?',
+          options: [
+            { text: 'We pack and ship everything manually with no defined process', score: 0 },
+            { text: 'We have a basic process but it depends on who\'s doing it', score: 1 },
+            { text: 'We have a documented process but still hit errors regularly', score: 2 },
+            { text: 'Our fulfillment is standardised, tracked, and error rates are low', score: 3 }
+          ]
+        },
+        {
+          category: 'Order Fulfillment',
+          text: 'How do you handle shipping and delivery tracking?',
+          options: [
+            { text: 'Customers have to chase us for updates', score: 0 },
+            { text: 'We send tracking numbers manually after dispatch', score: 1 },
+            { text: 'Tracking emails are automated but we don\'t monitor delivery issues', score: 2 },
+            { text: 'Automated tracking with proactive alerts for delays or exceptions', score: 3 }
+          ]
+        },
+        {
+          category: 'Order Fulfillment',
+          text: 'How do you manage returns and exchanges?',
+          options: [
+            { text: 'We deal with them on a case-by-case basis via email', score: 0 },
+            { text: 'We have a returns policy but the process is mostly manual', score: 1 },
+            { text: 'We have a returns portal but don\'t track reasons or costs well', score: 2 },
+            { text: 'Self-service returns portal with data on return reasons and costs', score: 3 }
+          ]
+        },
+
+        // ── Inventory Management (3 questions) ──
+        {
+          category: 'Inventory Management',
+          text: 'How do you forecast inventory demand?',
+          options: [
+            { text: 'We don\'t — we reorder when we run out or guess based on gut feel', score: 0 },
+            { text: 'We look at past sales occasionally to estimate what we need', score: 1 },
+            { text: 'We use spreadsheets and historical data but it\'s inconsistent', score: 2 },
+            { text: 'We have a forecasting model based on trends, seasonality, and lead times', score: 3 }
+          ]
+        },
+        {
+          category: 'Inventory Management',
+          text: 'How accurate is your real-time inventory data?',
+          options: [
+            { text: 'We often oversell or discover stock discrepancies after the fact', score: 0 },
+            { text: 'It\'s mostly right but we do manual stock checks regularly', score: 1 },
+            { text: 'Synced across channels but small discrepancies still happen', score: 2 },
+            { text: 'Real-time accuracy across all channels with alerts for low stock', score: 3 }
+          ]
+        },
+        {
+          category: 'Inventory Management',
+          text: 'How do you manage your SKU architecture and product data?',
+          options: [
+            { text: 'SKUs are inconsistent and product data is scattered across tools', score: 0 },
+            { text: 'We have a naming convention but don\'t follow it consistently', score: 1 },
+            { text: 'Standardised SKUs and product data but not always kept up to date', score: 2 },
+            { text: 'Clean, consistent SKU system with a single source of truth for product data', score: 3 }
+          ]
+        },
+
+        // ── Customer Experience (3 questions) ──
+        {
+          category: 'Customer Experience',
+          text: 'How do you handle customer support enquiries?',
+          options: [
+            { text: 'We respond from a shared inbox when someone gets around to it', score: 0 },
+            { text: 'We have a support email but no SLA or response time targets', score: 1 },
+            { text: 'We use a helpdesk tool with canned responses but limited reporting', score: 2 },
+            { text: 'Dedicated support platform with SLAs, macros, tagging, and performance metrics', score: 3 }
+          ]
+        },
+        {
+          category: 'Customer Experience',
+          text: 'How would you describe your post-purchase email flows?',
+          options: [
+            { text: 'We send a generic order confirmation and that\'s about it', score: 0 },
+            { text: 'We have a confirmation and shipping email but nothing beyond that', score: 1 },
+            { text: 'We have a few post-purchase emails but they\'re not segmented or tested', score: 2 },
+            { text: 'Segmented post-purchase flows: tips, cross-sells, reviews, and win-backs', score: 3 }
+          ]
+        },
+        {
+          category: 'Customer Experience',
+          text: 'Do you actively measure customer satisfaction or loyalty?',
+          options: [
+            { text: 'We don\'t track it — we just respond to complaints as they come in', score: 0 },
+            { text: 'We read reviews but don\'t systematically collect feedback', score: 1 },
+            { text: 'We send occasional surveys but don\'t act on the data consistently', score: 2 },
+            { text: 'Regular NPS/CSAT measurement with a feedback loop that drives improvements', score: 3 }
+          ]
+        },
+
+        // ── Tech & Automation (2 questions) ──
+        {
+          category: 'Tech & Automation',
+          text: 'How connected is your tech stack (Shopify, email, subscriptions, etc.)?',
+          options: [
+            { text: 'Tools are siloed — we copy data between them manually', score: 0 },
+            { text: 'Some integrations exist but data doesn\'t flow reliably', score: 1 },
+            { text: 'Core tools are connected but there are gaps and workarounds', score: 2 },
+            { text: 'Fully integrated stack — data flows automatically between key platforms', score: 3 }
+          ]
+        },
+        {
+          category: 'Tech & Automation',
+          text: 'How much of your day-to-day operations is automated?',
+          options: [
+            { text: 'Almost nothing — everything is manual or done in spreadsheets', score: 0 },
+            { text: 'A few things are automated (like order confirmations) but most is manual', score: 1 },
+            { text: 'Key workflows are automated but there\'s still a lot of manual intervention', score: 2 },
+            { text: 'Most repeatable tasks are automated — alerts, flows, tagging, reporting', score: 3 }
+          ]
+        },
+
+        // ── Financial Operations (2 questions) ──
+        {
+          category: 'Financial Operations',
+          text: 'Do you know your true unit economics (cost per order, contribution margin)?',
+          options: [
+            { text: 'Not really — we track top-line revenue but not cost per order', score: 0 },
+            { text: 'We have a rough idea from spreadsheets but it\'s not precise', score: 1 },
+            { text: 'We calculate it but don\'t break it down by channel or product', score: 2 },
+            { text: 'Clear unit economics by product and channel, reviewed regularly', score: 3 }
+          ]
+        },
+        {
+          category: 'Financial Operations',
+          text: 'How do you evaluate the profitability of promotions and discounts?',
+          options: [
+            { text: 'We discount based on gut feel or competitor pricing', score: 0 },
+            { text: 'We track revenue during promos but not the impact on margin', score: 1 },
+            { text: 'We compare promo revenue to non-promo periods but not systematically', score: 2 },
+            { text: 'Every promotion is measured against a baseline with margin impact tracked', score: 3 }
+          ]
+        }
+      ];
+
+      // Category configs
+      const categories = [
+        { name: 'Order Fulfillment', maxScore: 9 },
+        { name: 'Inventory Management', maxScore: 9 },
+        { name: 'Customer Experience', maxScore: 9 },
+        { name: 'Tech & Automation', maxScore: 6 },
+        { name: 'Financial Operations', maxScore: 6 }
+      ];
+
+      const totalMax = 39;
+
+      // Score bands
+      const bands = [
+        {
+          min: 0, max: 13,
+          label: 'Critical',
+          class: 'critical',
+          colour: '#c0392b',
+          summary: 'Your operations have significant gaps that are likely costing you revenue and customer trust. The good news? These are fixable, and addressing them now will make a big difference before you try to scale.'
+        },
+        {
+          min: 14, max: 22,
+          label: 'Needs Work',
+          class: 'needs-work',
+          colour: '#e67e22',
+          summary: 'You\'ve got some foundations in place, but there are clear gaps that will hold you back as you grow. Tightening up your processes and systems now will save you a lot of pain down the line.'
+        },
+        {
+          min: 23, max: 31,
+          label: 'Good Shape',
+          class: 'good',
+          colour: '#27ae60',
+          summary: 'Your operations are solid in several areas. There are still opportunities to optimise and automate, which will free up your time and improve margins as you scale.'
+        },
+        {
+          min: 32, max: 39,
+          label: 'Excellent',
+          class: 'excellent',
+          colour: '#2d5a27',
+          summary: 'Your operations are in great shape. You\'ve built strong systems and processes. Keep iterating, and consider whether there are strategic areas where expert input could unlock even more growth.'
+        }
+      ];
+
+      // ==========================================
+      // STATE
+      // ==========================================
+      let currentQuestion = 0;
+      const answers = new Array(questions.length).fill(null);
+
+      // ==========================================
+      // DOM REFERENCES
+      // ==========================================
+      const introScreen = document.getElementById('intro-screen');
+      const quizScreen = document.getElementById('quiz-screen');
+      const resultsScreen = document.getElementById('results-screen');
+      const startBtn = document.getElementById('start-quiz');
+      const backBtn = document.getElementById('btn-back');
+      const nextBtn = document.getElementById('btn-next');
+      const progressCategory = document.getElementById('progress-category');
+      const progressCount = document.getElementById('progress-count');
+      const progressFill = document.getElementById('progress-fill');
+      const questionArea = document.getElementById('question-area');
+      const gateForm = document.getElementById('gate-form');
+      const resultsGate = document.getElementById('results-gate');
+      const resultsContent = document.getElementById('results-content');
+      const resultsHeader = document.querySelector('.results__header');
+
+      // ==========================================
+      // SCREEN MANAGEMENT
+      // ==========================================
+      function showScreen(screen) {
+        [introScreen, quizScreen, resultsScreen].forEach(s => s.classList.remove('active'));
+        screen.classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      // ==========================================
+      // QUIZ RENDERING
+      // ==========================================
+      function renderQuestion() {
+        const q = questions[currentQuestion];
+        const answered = answers[currentQuestion];
+
+        // Progress
+        progressCategory.textContent = q.category;
+        progressCount.textContent = `${currentQuestion + 1} of ${questions.length}`;
+        progressFill.style.width = `${((currentQuestion + 1) / questions.length) * 100}%`;
+
+        // Back button visibility
+        backBtn.style.visibility = currentQuestion === 0 ? 'hidden' : 'visible';
+
+        // Next button
+        nextBtn.disabled = answered === null;
+        nextBtn.textContent = currentQuestion === questions.length - 1 ? 'See Results' : 'Next';
+
+        // Build question HTML
+        let html = `
+          <div class="animate-in">
+            <div class="question__category">${q.category}</div>
+            <h2 class="question__text">${q.text}</h2>
+            <div class="options">
+        `;
+
+        q.options.forEach((opt, i) => {
+          const selected = answered === i ? ' selected' : '';
+          html += `
+            <div class="option${selected}" data-index="${i}" role="button" tabindex="0" aria-pressed="${answered === i}">
+              <div class="option__radio"></div>
+              <span class="option__text">${opt.text}</span>
+            </div>
+          `;
+        });
+
+        html += '</div></div>';
+        questionArea.innerHTML = html;
+
+        // Attach listeners
+        questionArea.querySelectorAll('.option').forEach(el => {
+          el.addEventListener('click', () => selectOption(parseInt(el.dataset.index)));
+          el.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              selectOption(parseInt(el.dataset.index));
+            }
+          });
+        });
+      }
+
+      function selectOption(index) {
+        answers[currentQuestion] = index;
+        nextBtn.disabled = false;
+
+        // Update visual state
+        questionArea.querySelectorAll('.option').forEach((el, i) => {
+          el.classList.toggle('selected', i === index);
+          el.setAttribute('aria-pressed', i === index);
+        });
+      }
+
+      // ==========================================
+      // NAVIGATION
+      // ==========================================
+      startBtn.addEventListener('click', () => {
+        showScreen(quizScreen);
+        renderQuestion();
+      });
+
+      backBtn.addEventListener('click', () => {
+        if (currentQuestion > 0) {
+          currentQuestion--;
+          renderQuestion();
+        }
+      });
+
+      nextBtn.addEventListener('click', () => {
+        if (answers[currentQuestion] === null) return;
+
+        if (currentQuestion < questions.length - 1) {
+          currentQuestion++;
+          renderQuestion();
+        } else {
+          showResults();
+        }
+      });
+
+      // ==========================================
+      // RESULTS
+      // ==========================================
+      function calculateScores() {
+        const categoryScores = {};
+        categories.forEach(c => { categoryScores[c.name] = 0; });
+
+        questions.forEach((q, i) => {
+          if (answers[i] !== null) {
+            categoryScores[q.category] += q.options[answers[i]].score;
+          }
+        });
+
+        const total = Object.values(categoryScores).reduce((a, b) => a + b, 0);
+        return { total, categoryScores };
+      }
+
+      function getBand(score) {
+        return bands.find(b => score >= b.min && score <= b.max) || bands[0];
+      }
+
+      function showResults() {
+        showScreen(resultsScreen);
+        const { total, categoryScores } = calculateScores();
+        const band = getBand(total);
+
+        // Render score circle (behind blur)
+        const circumference = 2 * Math.PI * 52;
+        const arc = document.getElementById('score-arc');
+        arc.style.strokeDasharray = circumference;
+        arc.style.strokeDashoffset = circumference;
+        arc.style.stroke = band.colour;
+
+        document.getElementById('score-number').textContent = total;
+
+        // Band pill
+        document.getElementById('score-band-container').innerHTML = `
+          <div class="score-band score-band--${band.class}">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            ${band.label}
+          </div>
+        `;
+
+        document.getElementById('score-summary').textContent = band.summary;
+
+        // Category breakdown
+        const breakdownEl = document.getElementById('breakdown');
+        let breakdownHTML = '<h3 class="breakdown__title">Category Breakdown</h3>';
+
+        categories.forEach(cat => {
+          const catScore = categoryScores[cat.name];
+          const pct = (catScore / cat.maxScore) * 100;
+          const catBand = getBand(Math.round((catScore / cat.maxScore) * totalMax));
+
+          breakdownHTML += `
+            <div class="breakdown__item">
+              <div class="breakdown__header">
+                <span class="breakdown__name">${cat.name}</span>
+                <span class="breakdown__score">${catScore} / ${cat.maxScore}</span>
+              </div>
+              <div class="breakdown__bar">
+                <div class="breakdown__fill breakdown__fill--${catBand.class}" data-width="${pct}"></div>
+              </div>
+            </div>
+          `;
+        });
+
+        breakdownEl.innerHTML = breakdownHTML;
+
+        // Store scores for later animation
+        window.__quizScores = { total, circumference, band };
+      }
+
+      function animateResults() {
+        const { total, circumference, band } = window.__quizScores;
+        const arc = document.getElementById('score-arc');
+        const pct = total / totalMax;
+        const offset = circumference - (pct * circumference);
+
+        requestAnimationFrame(() => {
+          arc.style.strokeDashoffset = offset;
+        });
+
+        // Animate breakdown bars
+        document.querySelectorAll('.breakdown__fill').forEach(bar => {
+          requestAnimationFrame(() => {
+            bar.style.width = bar.dataset.width + '%';
+          });
+        });
+      }
+
+      // ==========================================
+      // LEAD GATE FORM
+      // ==========================================
+      gateForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const nameInput = document.getElementById('lead-name');
+        const emailInput = document.getElementById('lead-email');
+        const nameError = document.getElementById('lead-name-error');
+        const emailError = document.getElementById('lead-email-error');
+
+        // Reset errors
+        nameInput.classList.remove('error');
+        emailInput.classList.remove('error');
+        nameError.classList.remove('visible');
+        emailError.classList.remove('visible');
+
+        let valid = true;
+
+        if (!nameInput.value.trim()) {
+          nameInput.classList.add('error');
+          nameError.classList.add('visible');
+          valid = false;
+        }
+
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailInput.value.trim() || !emailPattern.test(emailInput.value.trim())) {
+          emailInput.classList.add('error');
+          emailError.classList.add('visible');
+          valid = false;
+        }
+
+        if (!valid) return;
+
+        // Disable button
+        const submitBtn = document.getElementById('gate-submit');
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Unlocking...';
+
+        // Build lead data
+        const { total, categoryScores } = calculateScores();
+        const band = getBand(total);
+
+        const leadData = {
+          name: nameInput.value.trim(),
+          email: emailInput.value.trim(),
+          quiz_score: total,
+          quiz_max: totalMax,
+          quiz_band: band.label,
+          category_scores: {},
+          submitted_at: new Date().toISOString()
+        };
+
+        categories.forEach(cat => {
+          leadData.category_scores[cat.name] = {
+            score: window.__quizScores ? calculateScores().categoryScores[cat.name] : 0,
+            max: cat.maxScore
+          };
+        });
+
+        // Build Formspree payload (flat key-value pairs for clean emails)
+        const formData = new FormData();
+        formData.append('name', leadData.name);
+        formData.append('email', leadData.email);
+        formData.append('_subject', `Quiz Lead: ${leadData.name} scored ${total}/${totalMax} (${band.label})`);
+        formData.append('Score', `${total} / ${totalMax}`);
+        formData.append('Band', band.label);
+
+        categories.forEach(cat => {
+          const catScore = categoryScores[cat.name];
+          formData.append(cat.name, `${catScore} / ${cat.maxScore}`);
+        });
+
+        formData.append('Submitted At', leadData.submitted_at);
+
+        // POST to Formspree (same service as your contact form)
+        try {
+          await fetch('https://formspree.io/f/xbdperyy', {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+          });
+        } catch (err) {
+          // Silently handle — don't block the user experience
+          console.log('Formspree submission failed:', err);
+        }
+
+        // Unlock results
+        unlockResults();
+      });
+
+      function unlockResults() {
+        // Hide gate
+        resultsGate.classList.add('hidden');
+
+        // Unblur
+        resultsContent.classList.remove('blurred');
+
+        // Update header
+        resultsHeader.querySelector('.results__title').textContent = 'Your Operations Health Score';
+        resultsHeader.querySelector('.results__subtitle').textContent = 'Here\'s how your e-commerce operations stack up across 5 key areas.';
+
+        // Animate the revealed results
+        setTimeout(() => animateResults(), 200);
+      }
+
+      // ==========================================
+      // KEYBOARD NAV
+      // ==========================================
+      document.addEventListener('keydown', (e) => {
+        if (!quizScreen.classList.contains('active')) return;
+
+        if (e.key === 'ArrowRight' || e.key === 'Enter') {
+          if (!nextBtn.disabled) nextBtn.click();
+        } else if (e.key === 'ArrowLeft') {
+          backBtn.click();
+        }
+      });
+
+    })();
+  </script>
+</body>
+</html>
