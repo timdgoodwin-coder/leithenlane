@@ -1,5 +1,7 @@
 {
   "rewrites": [
+    { "source": "/worcestershire", "destination": "/worcestershire/index.html" },
+    { "source": "/worcestershire/", "destination": "/worcestershire/index.html" },
     { "source": "/blog", "destination": "/blog/index.html" },
     { "source": "/blog/", "destination": "/blog/index.html" },
     { "source": "/blog/:slug", "destination": "/blog/:slug/index.html" },

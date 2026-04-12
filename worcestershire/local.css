@@ -1,0 +1,175 @@
+/* ============================================
+   Leithen Lane — Worcestershire Landing Page
+   Supplementary styles (extend index.css)
+   ============================================ */
+
+/* --- Local Banner Section --- */
+.local-banner {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  color: #FFFFFF;
+  padding: var(--space-3xl) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.local-banner::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.04);
+  pointer-events: none;
+}
+
+.local-banner::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  left: -8%;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.03);
+  pointer-events: none;
+}
+
+.local-banner__content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.local-banner__icon {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  margin: 0 auto var(--space-lg);
+  color: #FFFFFF;
+}
+
+.local-banner__icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.local-banner h2 {
+  color: #FFFFFF;
+  margin-bottom: var(--space-md);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.local-banner p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* --- Who I Help Grid --- */
+.who-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+}
+
+.who-card {
+  padding: var(--space-xl) var(--space-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  text-align: center;
+  transition: all var(--transition);
+  cursor: default;
+  position: relative;
+  overflow: hidden;
+}
+
+.who-card::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  transform: scaleX(0);
+  transition: transform var(--transition);
+}
+
+.who-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+
+.who-card:hover::before {
+  transform: scaleX(1);
+}
+
+.who-card__icon {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-accent);
+  border-radius: var(--radius-md);
+  margin: 0 auto var(--space-md);
+  color: var(--color-primary);
+  transition: all var(--transition);
+}
+
+.who-card:hover .who-card__icon {
+  background: var(--color-primary);
+  color: #FFFFFF;
+}
+
+.who-card__icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.who-card__title {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+}
+
+.who-card__text {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}
+
+/* --- AI service card icon accent --- */
+.service-card__icon--ai {
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-warm) 100%);
+  color: var(--color-secondary);
+}
+
+/* --- Responsive overrides for new components --- */
+@media (max-width: 1024px) {
+  .who-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .who-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .local-banner {
+    padding: var(--space-2xl) 0;
+  }
+}
