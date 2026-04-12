@@ -30,7 +30,9 @@ description: How to add a new blog post to the Leithen Lane site
       "content": "<p>Section content with HTML formatting.</p><ul><li>List items</li></ul>"
     }
   ],
-  "cta": "Closing call-to-action text. Should mention booking a free consultation."
+  "cta": "Closing call-to-action text. Should mention booking a free consultation.",
+  "ctaLink": "/worcestershire",  // Optional. Defaults to /#contact if omitted.
+  "ctaLabel": "See How I Help Worcestershire Businesses"  // Optional. Defaults to 'Book a Free Consultation' if omitted.
 }
 ```
 
@@ -62,7 +64,7 @@ git push origin main
 
 - **Content is HTML**: The `content` field in each section accepts raw HTML. Use `<p>`, `<ul>`, `<ol>`, `<strong>`, `<em>`, `<table>`, etc.
 - **First section**: Should NOT have a `heading` — it's the intro paragraph.
-- **Categories used so far**: Systems & Integration, Fulfilment & Logistics, Commercial & Profitability, Customer Experience, Scaling Operations.
+- **Categories used so far**: Systems & Integration, Fulfilment & Logistics, Commercial & Profitability, Customer Experience, Scaling Operations, Local Business.
 - **Slug format**: lowercase, hyphen-separated, no trailing slash (e.g. `my-new-post`).
 - **Images**: Not currently supported in blog posts. If needed, add an `image` field to the JSON schema and update `generate-blog.js`.
 - **CSS**: Blog styles live in `blog.css` — extends the main `index.css` design system.
