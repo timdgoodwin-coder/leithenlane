@@ -988,6 +988,25 @@ p {
   box-shadow: 0 4px 16px rgba(0,0,0,0.15);
 }
 
+.btn--white-outline {
+  background: transparent;
+  color: #FFFFFF;
+  border: 2px solid rgba(255,255,255,0.5);
+}
+
+.btn--white-outline:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: #FFFFFF;
+  transform: translateY(-1px);
+}
+
+.cta-banner__actions {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 /* --- Contact Form --- */
 .contact {
   background: var(--color-surface);

@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free E-commerce Scale-Up Checklist | Leithen Lane</title>
+  <meta name="description" content="Download the free 25-point checklist to find out if your e-commerce operations are ready to scale. Covers systems, customer experience, profitability, fulfilment, and more.">
+  <meta name="author" content="Samantha Goodwin">
+  <meta property="og:title" content="Free E-commerce Scale-Up Checklist | Leithen Lane">
+  <meta property="og:description" content="25 things to sort out before you pour money into growth. Free checklist from an operator who's done it.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://leithenlane.com/checklist">
+  <link rel="canonical" href="https://leithenlane.com/checklist">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-79K70YMPTB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-79K70YMPTB');
+  </script>
+
+  <style>
+    /* ========== RESET & BASE ========== */
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --green: #2d5a27;
+      --green-light: #e8f0e7;
+      --green-mid: #4a8a42;
+      --green-pale: #f4f8f3;
+      --green-dark: #1e3d1a;
+      --text-primary: #1a1a1a;
+      --text-secondary: #555;
+      --text-muted: #888;
+      --border: #e0e0e0;
+      --border-light: #f0f0f0;
+      --bg: #ffffff;
+      --bg-alt: #fafafa;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+      --shadow-lg: 0 8px 30px rgba(0,0,0,0.12);
+      --radius: 12px;
+      --radius-sm: 8px;
+      --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--text-primary);
+      background: var(--bg);
+      line-height: 1.6;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ========== NAV ========== */
+    .nav {
+      padding: 16px 0;
+      border-bottom: 1px solid var(--border);
+      background: var(--bg);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .nav__logo {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--green);
+      text-decoration: none;
+      letter-spacing: -0.3px;
+    }
+
+    .nav__logo span {
+      font-weight: 400;
+      color: var(--text-secondary);
+    }
+
+    .nav__back {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color var(--transition);
+    }
+
+    .nav__back:hover {
+      color: var(--green);
+    }
+
+    /* ========== CONTAINER ========== */
+    .container {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ========== HERO ========== */
+    .hero {
+      padding: 48px 0 40px;
+      text-align: center;
+    }
+
+    .hero__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--green);
+      background: var(--green-light);
+      padding: 6px 16px;
+      border-radius: 100px;
+      margin-bottom: 24px;
+    }
+
+    .hero__title {
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: -0.8px;
+      line-height: 1.15;
+      margin-bottom: 16px;
+      color: var(--text-primary);
+    }
+
+    .hero__title em {
+      font-style: normal;
+      color: var(--green);
+    }
+
+    .hero__desc {
+      font-size: 1.0625rem;
+      color: var(--text-secondary);
+      max-width: 560px;
+      margin: 0 auto 32px;
+      line-height: 1.6;
+    }
+
+    /* ========== WHAT'S INSIDE ========== */
+    .preview {
+      padding: 0 0 48px;
+    }
+
+    .preview__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    .preview__item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 18px 20px;
+      background: var(--bg-alt);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      transition: all var(--transition);
+    }
+
+    .preview__item:hover {
+      border-color: var(--green-light);
+      background: var(--green-pale);
+    }
+
+    .preview__icon {
+      width: 40px;
+      height: 40px;
+      background: var(--green-light);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--green);
+    }
+
+    .preview__content {
+      flex: 1;
+    }
+
+    .preview__name {
+      font-size: 0.9375rem;
+      font-weight: 600;
+      margin-bottom: 2px;
+      color: var(--text-primary);
+    }
+
+    .preview__desc {
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* ========== GATE FORM ========== */
+    .gate {
+      padding: 48px 0;
+      background: linear-gradient(180deg, var(--green-pale) 0%, var(--bg) 100%);
+      border-top: 1px solid var(--green-light);
+    }
+
+    .gate__card {
+      max-width: 480px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .gate__icon {
+      width: 56px;
+      height: 56px;
+      background: var(--green-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      color: var(--green);
+    }
+
+    .gate__title {
+      font-size: 1.375rem;
+      font-weight: 700;
+      letter-spacing: -0.4px;
+      margin-bottom: 8px;
+    }
+
+    .gate__desc {
+      font-size: 0.9375rem;
+      color: var(--text-secondary);
+      margin-bottom: 28px;
+      line-height: 1.6;
+    }
+
+    .gate__form {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      text-align: left;
+    }
+
+    .gate__group {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .gate__label {
+      font-size: 0.8125rem;
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+
+    .gate__input {
+      font-family: inherit;
+      font-size: 0.9375rem;
+      padding: 13px 16px;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-sm);
+      background: var(--bg);
+      color: var(--text-primary);
+      transition: border-color var(--transition), box-shadow var(--transition);
+      outline: none;
+      width: 100%;
+    }
+
+    .gate__input:focus {
+      border-color: var(--green);
+      box-shadow: 0 0 0 3px rgba(45, 90, 39, 0.1);
+    }
+
+    .gate__input.error {
+      border-color: #c0392b;
+    }
+
+    .gate__error {
+      font-size: 0.75rem;
+      color: #c0392b;
+      display: none;
+    }
+
+    .gate__error.visible {
+      display: block;
+    }
+
+    .gate__note {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-align: center;
+      margin-top: 4px;
+    }
+
+    /* ========== BUTTONS ========== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 14px 32px;
+      border-radius: var(--radius-sm);
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all var(--transition);
+    }
+
+    .btn--primary {
+      background: var(--green);
+      color: #fff;
+      width: 100%;
+    }
+
+    .btn--primary:hover {
+      background: var(--green-dark);
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none !important;
+    }
+
+    .btn--outline {
+      background: var(--bg);
+      color: var(--green);
+      border: 2px solid var(--green);
+      width: 100%;
+    }
+
+    .btn--outline:hover {
+      background: var(--green-pale);
+    }
+
+    .btn--ghost {
+      background: none;
+      color: var(--text-secondary);
+      padding: 10px 20px;
+      font-size: 0.875rem;
+    }
+
+    .btn--ghost:hover {
+      color: var(--green);
+    }
+
+    /* ========== CHECKLIST (revealed after gate) ========== */
+    .checklist {
+      display: none;
+      padding: 48px 0 64px;
+    }
+
+    .checklist.active {
+      display: block;
+    }
+
+    .checklist__header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .checklist__success-icon {
+      width: 56px;
+      height: 56px;
+      background: #e4f5ec;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+      color: #27ae60;
+    }
+
+    .checklist__header-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.4px;
+      margin-bottom: 8px;
+    }
+
+    .checklist__header-desc {
+      font-size: 0.9375rem;
+      color: var(--text-secondary);
+    }
+
+    .checklist__actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    .checklist__actions .btn {
+      width: auto;
+      padding: 10px 24px;
+      font-size: 0.875rem;
+    }
+
+    /* Category sections */
+    .checklist__category {
+      margin-bottom: 36px;
+    }
+
+    .checklist__category-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--green-light);
+    }
+
+    .checklist__category-icon {
+      width: 36px;
+      height: 36px;
+      background: var(--green-light);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--green);
+      flex-shrink: 0;
+    }
+
+    .checklist__category-title {
+      font-size: 1.0625rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: -0.3px;
+    }
+
+    .checklist__category-count {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--green);
+      background: var(--green-light);
+      padding: 2px 10px;
+      border-radius: 100px;
+      margin-left: auto;
+    }
+
+    .checklist__items {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .checklist__item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 14px 16px;
+      border-radius: var(--radius-sm);
+      background: var(--bg);
+      border: 1px solid var(--border-light);
+      cursor: pointer;
+      transition: all var(--transition);
+      user-select: none;
+    }
+
+    .checklist__item:hover {
+      border-color: var(--green-light);
+      background: var(--green-pale);
+    }
+
+    .checklist__item.checked {
+      background: var(--green-pale);
+      border-color: var(--green-light);
+    }
+
+    .checklist__item.checked .checklist__item-text {
+      color: var(--text-muted);
+      text-decoration: line-through;
+    }
+
+    .checklist__checkbox {
+      width: 22px;
+      height: 22px;
+      border: 2px solid var(--border);
+      border-radius: 6px;
+      flex-shrink: 0;
+      margin-top: 1px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all var(--transition);
+    }
+
+    .checklist__item.checked .checklist__checkbox {
+      background: var(--green);
+      border-color: var(--green);
+    }
+
+    .checklist__item.checked .checklist__checkbox svg {
+      opacity: 1;
+    }
+
+    .checklist__checkbox svg {
+      opacity: 0;
+      transition: opacity var(--transition);
+    }
+
+    .checklist__item-text {
+      font-size: 0.9375rem;
+      color: var(--text-primary);
+      line-height: 1.5;
+      transition: all var(--transition);
+    }
+
+    /* Progress tracker */
+    .checklist__progress {
+      position: sticky;
+      top: 57px;
+      background: var(--bg);
+      padding: 16px 0;
+      border-bottom: 1px solid var(--border-light);
+      margin-bottom: 32px;
+      z-index: 50;
+    }
+
+    .checklist__progress-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+
+    .checklist__progress-label {
+      font-size: 0.8125rem;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    .checklist__progress-count {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--green);
+    }
+
+    .checklist__progress-bar {
+      width: 100%;
+      height: 6px;
+      background: var(--green-light);
+      border-radius: 100px;
+      overflow: hidden;
+    }
+
+    .checklist__progress-fill {
+      height: 100%;
+      background: var(--green);
+      border-radius: 100px;
+      transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      width: 0%;
+    }
+
+    /* CTA at bottom */
+    .checklist__cta {
+      text-align: center;
+      padding: 32px 24px;
+      background: var(--green-pale);
+      border: 1px solid var(--green-light);
+      border-radius: var(--radius);
+      margin-top: 16px;
+    }
+
+    .checklist__cta-title {
+      font-size: 1.125rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .checklist__cta-text {
+      font-size: 0.9375rem;
+      color: var(--text-secondary);
+      margin-bottom: 20px;
+      max-width: 440px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .checklist__cta .btn {
+      width: auto;
+      padding: 14px 32px;
+    }
+
+    /* ========== FOOTER ========== */
+    .footer {
+      padding: 24px 0;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      margin-top: auto;
+    }
+
+    .footer__text {
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+    }
+
+    .footer__text a {
+      color: var(--green);
+      text-decoration: none;
+    }
+
+    .footer__text a:hover {
+      text-decoration: underline;
+    }
+
+    /* ========== ANIMATIONS ========== */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-in {
+      animation: fadeInUp 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+
+    .animate-in-delay-1 { animation-delay: 0.1s; opacity: 0; }
+    .animate-in-delay-2 { animation-delay: 0.2s; opacity: 0; }
+    .animate-in-delay-3 { animation-delay: 0.3s; opacity: 0; }
+    .animate-in-delay-4 { animation-delay: 0.4s; opacity: 0; }
+
+    /* ========== PRINT STYLES ========== */
+    @media print {
+      .nav, .gate, .checklist__actions, .checklist__cta,
+      .checklist__progress, .footer, .hero { display: none !important; }
+
+      .checklist {
+        display: block !important;
+        padding: 0;
+      }
+
+      .checklist__header { margin-bottom: 24px; }
+
+      .checklist__item {
+        break-inside: avoid;
+        border: 1px solid #ddd;
+        padding: 10px 14px;
+      }
+
+      .checklist__category {
+        break-inside: avoid;
+      }
+
+      body { font-size: 11pt; }
+    }
+
+    /* ========== RESPONSIVE ========== */
+    @media (min-width: 640px) {
+      .hero { padding: 64px 0 48px; }
+
+      .hero__title { font-size: 2.5rem; }
+
+      .preview__grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+      }
+
+      .checklist__actions {
+        gap: 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero__title { font-size: 1.625rem; }
+
+      .checklist__actions {
+        flex-direction: column;
+      }
+
+      .checklist__actions .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <nav class="nav" role="navigation" aria-label="Checklist navigation">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo" aria-label="Leithen Lane home">Leithen <span>Lane</span></a>
+      <a href="/" class="nav__back">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+        Back to site
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== LANDING CONTENT (shown before gate) ========== -->
+  <div id="landing-content">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__badge">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/><path d="m9 15 2 2 4-4"/></svg>
+          Free Checklist
+        </div>
+        <h1 class="hero__title">
+          The E-commerce<br><em>Scale-Up Checklist</em>
+        </h1>
+        <p class="hero__desc">
+          25 things to sort out before you pour money into growth. Built from a decade of running, fixing, and scaling e-commerce operations.
+        </p>
+      </div>
+    </section>
+
+    <!-- What's inside -->
+    <section class="preview">
+      <div class="container">
+        <div class="preview__grid">
+          <div class="preview__item">
+            <div class="preview__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <div class="preview__content">
+              <div class="preview__name">Systems & Integration</div>
+              <div class="preview__desc">Are your tools actually connected, or are you leaking data and revenue?</div>
+            </div>
+          </div>
+          <div class="preview__item">
+            <div class="preview__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="preview__content">
+              <div class="preview__name">Customer Experience</div>
+              <div class="preview__desc">Is your CX a growth engine or just a cost centre?</div>
+            </div>
+          </div>
+          <div class="preview__item">
+            <div class="preview__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <div class="preview__content">
+              <div class="preview__name">Commercial & Profitability</div>
+              <div class="preview__desc">Do you actually know which products and channels make you money?</div>
+            </div>
+          </div>
+          <div class="preview__item">
+            <div class="preview__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
+            <div class="preview__content">
+              <div class="preview__name">Fulfilment & Logistics</div>
+              <div class="preview__desc">From manufacturer to customer's door, is your supply chain solid?</div>
+            </div>
+          </div>
+          <div class="preview__item" style="grid-column: 1 / -1; max-width: 100%;">
+            <div class="preview__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>
+            </div>
+            <div class="preview__content">
+              <div class="preview__name">Team & Processes</div>
+              <div class="preview__desc">Is knowledge in systems, or just in someone's head?</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gate -->
+    <section class="gate" id="gate">
+      <div class="container">
+        <div class="gate__card">
+          <div class="gate__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </div>
+          <h2 class="gate__title">Get the free checklist</h2>
+          <p class="gate__desc">Enter your details below and the full 25-point checklist will appear right here. No spam, no newsletter you didn't ask for.</p>
+          <form class="gate__form" id="gate-form" action="https://formspree.io/f/mbdpqqyv" method="POST" novalidate>
+            <input type="hidden" name="_source" value="checklist-download">
+            <input type="hidden" name="_subject" value="New Checklist Download from Leithen Lane">
+            <div class="gate__group">
+              <label class="gate__label" for="gate-name">Your name</label>
+              <input class="gate__input" type="text" id="gate-name" name="name" placeholder="First name" required autocomplete="given-name">
+              <span class="gate__error" id="gate-name-error">Please enter your name</span>
+            </div>
+            <div class="gate__group">
+              <label class="gate__label" for="gate-email">Email address</label>
+              <input class="gate__input" type="email" id="gate-email" name="email" placeholder="you@company.com" required autocomplete="email">
+              <span class="gate__error" id="gate-email-error">Please enter a valid email address</span>
+            </div>
+            <button type="submit" class="btn btn--primary" id="gate-submit">
+              Unlock the Checklist
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></svg>
+            </button>
+            <p class="gate__note">Free download. No credit card. Just practical help.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ========== CHECKLIST CONTENT (hidden until unlocked) ========== -->
+  <section class="checklist" id="checklist">
+    <div class="container">
+
+      <!-- Success header -->
+      <div class="checklist__header animate-in">
+        <div class="checklist__success-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <h2 class="checklist__header-title">Your checklist is ready</h2>
+        <p class="checklist__header-desc">Work through each item. Tick them off as you go, or save it for later.</p>
+      </div>
+
+      <!-- Action buttons -->
+      <div class="checklist__actions animate-in animate-in-delay-1">
+        <button class="btn btn--outline" id="print-btn" onclick="window.print()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
+          Print / Save as PDF
+        </button>
+        <button class="btn btn--ghost" id="reset-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M3 21v-5h5"/></svg>
+          Reset all
+        </button>
+      </div>
+
+      <!-- Progress bar -->
+      <div class="checklist__progress animate-in animate-in-delay-2">
+        <div class="checklist__progress-inner">
+          <span class="checklist__progress-label">Your progress</span>
+          <span class="checklist__progress-count" id="progress-count">0 / 25</span>
+        </div>
+        <div class="checklist__progress-bar">
+          <div class="checklist__progress-fill" id="progress-fill"></div>
+        </div>
+      </div>
+
+      <!-- Category 1: Systems & Integration -->
+      <div class="checklist__category animate-in animate-in-delay-3">
+        <div class="checklist__category-header">
+          <div class="checklist__category-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3 class="checklist__category-title">Systems & Integration</h3>
+          <span class="checklist__category-count">5 items</span>
+        </div>
+        <ul class="checklist__items">
+          <li class="checklist__item" data-index="0">
+            <div class="checklist__checkbox">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span class="checklist__item-text">Your e-commerce platform connects to your email tool with real-time data sync (no manual exports)</span>
+          </li>
+          <li class="checklist__item" data-index="1">
+            <div class="checklist__checkbox">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span class="checklist__item-text">Customer purchase data flows automatically between all your platforms, not via CSV files</span>
+          </li>
+          <li class="checklist__item" data-index="2">
+            <div class="checklist__checkbox">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span class="checklist__item-text">You have a single source of truth for inventory across every sales channel</span>
+          </li>
+          <li class="checklist__item" data-index="3">
+            <div class="checklist__checkbox">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span class="checklist__item-text">If you run subscriptions, the platform is properly integrated with your store and email</span>
+          </li>
+          <li class="checklist__item" data-index="4">
+            <div class="checklist__checkbox">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span class="checklist__item-text">You've documented every tool you use, what it costs, and what it actually does for the business</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Category 2: Customer Experience -->
+      <div class="checklist__category animate-in animate-in-delay-4">
+        <div class="checklist__category-header">
+          <div class="checklist__category-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="checklist__category-title">Customer Experience</h3>
+          <span class="checklist__category-count">5 items</span>
+        </div>
+        <ul class="checklist__items">
+          <li class="checklist__item" data-index="5">
+            <div class="checklist__checkbox">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span class="checklist__item-text">You have automated welcome, post-purchase, and win-back email flows live and working</span>
+          </li>
+          <li class="checklist__item" data-index="6">
+            <div class="checklist__checkbox">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span class="checklist__item-text">Your support team can see a customer's full order history without switching between tabs</span>
+          </li>
+          <li class="checklist__item" data-index="7">
+            <div class="checklist__checkbox">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span class="checklist__item-text">You're collecting customer feedback systematically and actually doing something with it</span>
+          </li>
+          <li class="checklist__item" data-index="8">
+            <div class="checklist__checkbox">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span class="checklist__item-text">Returns and exchanges follow a clear, documented process (not dealt with on the fly)</span>
+          </li>
+          <li class="checklist__item" data-index="9">
+            <div class="checklist__checkbox">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span class="checklist__item-text">You know your NPS or CSAT score and it's trending in the right direction</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Category 3: Commercial & Profitability -->
+      <div class="checklist__category">
+        <div class="checklist__category-header">
+          <div class="checklist__category-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3 class="checklist__category-title">Commercial & Profitability</h3>
+          <span class="checklist__category-count">5 items</span>
+        </div>
+        <ul class="checklist__items">
+          <li class="checklist__item" data-index="10">
+            <div class="checklist__checkbox">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span class="checklist__item-text">You know your true unit economics per product (including shipping, packaging, and returns)</span>
+          </li>
+          <li class="checklist__item" data-index="11">
+            <div class="checklist__checkbox">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span class="checklist__item-text">You can tell which marketing channels are actually profitable, not just driving top-line revenue</span>
+          </li>
+          <li class="checklist__item" data-index="12">
+            <div class="checklist__checkbox">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span class="checklist__item-text">Your discount strategy is tested and measured against a baseline, not based on gut feel</span>
+          </li>
+          <li class="checklist__item" data-index="13">
+            <div class="checklist__checkbox">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span class="checklist__item-text">You track AOV, purchase frequency, and customer lifetime value at least monthly</span>
+          </li>
+          <li class="checklist__item" data-index="14">
+            <div class="checklist__checkbox">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span class="checklist__item-text">You have a pricing strategy document, not just prices you picked when you launched</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Category 4: Fulfilment & Logistics -->
+      <div class="checklist__category">
+        <div class="checklist__category-header">
+          <div class="checklist__category-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <h3 class="checklist__category-title">Fulfilment & Logistics</h3>
+          <span class="checklist__category-count">5 items</span>
+        </div>
+        <ul class="checklist__items">
+          <li class="checklist__item" data-index="15">
+            <div class="checklist__checkbox">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span class="checklist__item-text">Your fulfilment partner (3PL or in-house) has an SLA and you're tracking against it</span>
+          </li>
+          <li class="checklist__item" data-index="16">
+            <div class="checklist__checkbox">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span class="checklist__item-text">You have a reorder point system so you don't run out of bestsellers (or overstock slow movers)</span>
+          </li>
+          <li class="checklist__item" data-index="17">
+            <div class="checklist__checkbox">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span class="checklist__item-text">Your packaging is optimised for both cost and brand experience (not just one or the other)</span>
+          </li>
+          <li class="checklist__item" data-index="18">
+            <div class="checklist__checkbox">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span class="checklist__item-text">Shipping rates and zones are configured correctly with no margin leaks on delivery</span>
+          </li>
+          <li class="checklist__item" data-index="19">
+            <div class="checklist__checkbox">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span class="checklist__item-text">You have a contingency plan if your primary fulfilment partner goes down</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Category 5: Team & Processes -->
+      <div class="checklist__category">
+        <div class="checklist__category-header">
+          <div class="checklist__category-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>
+          </div>
+          <h3 class="checklist__category-title">Team & Processes</h3>
+          <span class="checklist__category-count">5 items</span>
+        </div>
+        <ul class="checklist__items">
+          <li class="checklist__item" data-index="20">
+            <div class="checklist__checkbox">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span class="checklist__item-text">Key operational processes are documented somewhere other than inside someone's head</span>
+          </li>
+          <li class="checklist__item" data-index="21">
+            <div class="checklist__checkbox">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span class="checklist__item-text">You have clear ownership for each major business function (not everything landing on one person)</span>
+          </li>
+          <li class="checklist__item" data-index="22">
+            <div class="checklist__checkbox">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span class="checklist__item-text">Your team uses a shared task or project management tool consistently (not just Slack and hope)</span>
+          </li>
+          <li class="checklist__item" data-index="23">
+            <div class="checklist__checkbox">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span class="checklist__item-text">You review operational KPIs weekly, not just revenue and ad spend</span>
+          </li>
+          <li class="checklist__item" data-index="24">
+            <div class="checklist__checkbox">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <span class="checklist__item-text">You have a 90-day operational roadmap, not just a marketing calendar</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- CTA at bottom -->
+      <div class="checklist__cta">
+        <h3 class="checklist__cta-title">Spotted some gaps?</h3>
+        <p class="checklist__cta-text">That's exactly what I help with. Let's have a quick conversation to figure out which gaps are costing you the most, and what to fix first.</p>
+        <a href="/#contact" class="btn btn--primary" id="checklist-cta">
+          Book a Free Consultation
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p class="footer__text">&copy; 2026 <a href="/">Leithen Lane</a>. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    (function() {
+      // Elements
+      const landingContent = document.getElementById('landing-content');
+      const checklistSection = document.getElementById('checklist');
+      const gateForm = document.getElementById('gate-form');
+      const nameInput = document.getElementById('gate-name');
+      const emailInput = document.getElementById('gate-email');
+      const nameError = document.getElementById('gate-name-error');
+      const emailError = document.getElementById('gate-email-error');
+      const submitBtn = document.getElementById('gate-submit');
+      const progressCount = document.getElementById('progress-count');
+      const progressFill = document.getElementById('progress-fill');
+      const resetBtn = document.getElementById('reset-btn');
+      const allItems = document.querySelectorAll('.checklist__item');
+      const TOTAL = allItems.length;
+
+      // Check if already unlocked (localStorage)
+      if (localStorage.getItem('ll_checklist_unlocked') === 'true') {
+        showChecklist();
+        restoreCheckedState();
+      }
+
+      // Form validation and submission
+      gateForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        // Reset errors
+        nameInput.classList.remove('error');
+        emailInput.classList.remove('error');
+        nameError.classList.remove('visible');
+        emailError.classList.remove('visible');
+
+        let valid = true;
+
+        if (!nameInput.value.trim()) {
+          nameInput.classList.add('error');
+          nameError.classList.add('visible');
+          valid = false;
+        }
+
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailInput.value.trim() || !emailPattern.test(emailInput.value.trim())) {
+          emailInput.classList.add('error');
+          emailError.classList.add('visible');
+          valid = false;
+        }
+
+        if (!valid) return;
+
+        // Disable button
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Unlocking...';
+
+        // Send to Formspree
+        const formData = new FormData(gateForm);
+
+        fetch(gateForm.action, {
+          method: 'POST',
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        })
+        .then(function(response) {
+          if (response.ok) {
+            // Track the conversion in GA
+            if (typeof gtag === 'function') {
+              gtag('event', 'checklist_download', {
+                event_category: 'Lead',
+                event_label: 'Scale-Up Checklist'
+              });
+            }
+
+            localStorage.setItem('ll_checklist_unlocked', 'true');
+            showChecklist();
+          } else {
+            // Still show the checklist even if Formspree fails
+            localStorage.setItem('ll_checklist_unlocked', 'true');
+            showChecklist();
+          }
+        })
+        .catch(function() {
+          // Show checklist anyway on network error
+          localStorage.setItem('ll_checklist_unlocked', 'true');
+          showChecklist();
+        });
+      });
+
+      function showChecklist() {
+        landingContent.style.display = 'none';
+        checklistSection.classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      // Checkbox toggling
+      allItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+          item.classList.toggle('checked');
+          saveCheckedState();
+          updateProgress();
+        });
+      });
+
+      function updateProgress() {
+        const checked = document.querySelectorAll('.checklist__item.checked').length;
+        progressCount.textContent = checked + ' / ' + TOTAL;
+        progressFill.style.width = ((checked / TOTAL) * 100) + '%';
+      }
+
+      function saveCheckedState() {
+        const state = [];
+        allItems.forEach(function(item) {
+          state.push(item.classList.contains('checked'));
+        });
+        localStorage.setItem('ll_checklist_state', JSON.stringify(state));
+      }
+
+      function restoreCheckedState() {
+        const saved = localStorage.getItem('ll_checklist_state');
+        if (!saved) return;
+        try {
+          const state = JSON.parse(saved);
+          state.forEach(function(isChecked, index) {
+            if (isChecked && allItems[index]) {
+              allItems[index].classList.add('checked');
+            }
+          });
+          updateProgress();
+        } catch(e) {
+          // Ignore parse errors
+        }
+      }
+
+      // Reset button
+      resetBtn.addEventListener('click', function() {
+        allItems.forEach(function(item) {
+          item.classList.remove('checked');
+        });
+        localStorage.removeItem('ll_checklist_state');
+        updateProgress();
+      });
+
+      // Focus management for inputs
+      [nameInput, emailInput].forEach(function(input) {
+        input.addEventListener('input', function() {
+          input.classList.remove('error');
+          const errorEl = document.getElementById(input.id + '-error');
+          if (errorEl) errorEl.classList.remove('visible');
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>
