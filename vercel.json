@@ -7,7 +7,9 @@
     { "source": "/blog", "destination": "/blog/index.html" },
     { "source": "/blog/", "destination": "/blog/index.html" },
     { "source": "/blog/:slug", "destination": "/blog/:slug/index.html" },
-    { "source": "/blog/:slug/", "destination": "/blog/:slug/index.html" }
+    { "source": "/blog/:slug/", "destination": "/blog/:slug/index.html" },
+    { "source": "/retention-ready", "destination": "/retention-ready/index.html" },
+    { "source": "/retention-ready/", "destination": "/retention-ready/index.html" }
   ],
   "headers": [
     {

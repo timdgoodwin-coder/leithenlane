@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retention Ready — LeithenLane</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #1a1a1a;
+      background: #ffffff;
+    }
+
+    /* ── Layout ── */
+    .page-wrapper {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 4rem 2rem 6rem;
+    }
+
+    /* ── Typography ── */
+    .eyebrow {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: 700;
+      line-height: 1.15;
+      color: #111;
+      margin-bottom: 1.25rem;
+    }
+
+    h1 em {
+      font-style: italic;
+      color: #1D4E89;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(22px, 3.5vw, 30px);
+      font-weight: 700;
+      line-height: 1.25;
+      color: #111;
+      margin-bottom: 1rem;
+    }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #1D4E89;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      color: #444;
+      margin-bottom: 1rem;
+    }
+
+    p strong {
+      color: #111;
+      font-weight: 500;
+    }
+
+    /* ── Divider ── */
+    hr {
+      border: none;
+      border-top: 1px solid #e8e8e8;
+      margin: 3.5rem 0;
+    }
+
+    /* ── CTA Button ── */
+    .btn-primary {
+      display: inline-block;
+      background: #1D4E89;
+      color: #fff;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      padding: 14px 32px;
+      border-radius: 4px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: background 0.15s ease;
+    }
+
+    .btn-primary:hover {
+      background: #163c6b;
+    }
+
+    .price-note {
+      font-size: 13px;
+      color: #888;
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+
+    /* ── Pain list ── */
+    .pain-list {
+      list-style: none;
+      margin: 1.5rem 0;
+    }
+
+    .pain-list li {
+      font-size: 15px;
+      padding: 10px 0 10px 24px;
+      position: relative;
+      border-bottom: 1px solid #f0f0f0;
+      color: #555;
+    }
+
+    .pain-list li:last-child {
+      border-bottom: none;
+    }
+
+    .pain-list li::before {
+      content: '-';
+      position: absolute;
+      left: 0;
+      color: #bbb;
+    }
+
+    /* ── Callout ── */
+    .callout {
+      background: #f5f8fc;
+      border-left: 3px solid #1D4E89;
+      border-radius: 0 4px 4px 0;
+      padding: 1.25rem 1.5rem;
+      margin: 2rem 0;
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 17px;
+      line-height: 1.65;
+      color: #222;
+    }
+
+    /* ── Module cards ── */
+    .modules-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 12px;
+      margin: 1.5rem 0;
+    }
+
+    .module-card {
+      background: #fff;
+      border: 1px solid #e8e8e8;
+      border-radius: 8px;
+      padding: 1.25rem;
+    }
+
+    .module-card.full-width {
+      grid-column: 1 / -1;
+    }
+
+    .module-num {
+      font-size: 11px;
+      font-weight: 500;
+      color: #1D4E89;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .module-title {
+      font-size: 15px;
+      font-weight: 500;
+      color: #111;
+      margin-bottom: 6px;
+      line-height: 1.4;
+    }
+
+    .module-desc {
+      font-size: 13px;
+      color: #666;
+      line-height: 1.55;
+      margin-bottom: 0;
+    }
+
+    /* ── For list ── */
+    .for-list {
+      list-style: none;
+      margin: 1.25rem 0;
+    }
+
+    .for-list li {
+      font-size: 15px;
+      padding: 8px 0 8px 26px;
+      position: relative;
+      color: #555;
+    }
+
+    .for-list li::before {
+      content: '\2713';
+      position: absolute;
+      left: 0;
+      color: #1D4E89;
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    /* ── About section ── */
+    .about-row {
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-start;
+    }
+
+    .about-avatar {
+      width: 52px;
+      height: 52px;
+      min-width: 52px;
+      border-radius: 50%;
+      background: #EBF2FA;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
+      color: #1D4E89;
+      font-weight: 700;
+    }
+
+    .about-name {
+      font-size: 15px;
+      font-weight: 500;
+      color: #111;
+      margin-bottom: 6px;
+    }
+
+    .about-text {
+      font-size: 15px;
+      color: #555;
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+
+    /* ── Price box ── */
+    .price-box {
+      background: #f8f8f6;
+      border: 1px solid #e8e8e8;
+      border-radius: 8px;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .price-label {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 8px;
+    }
+
+    .price-amount {
+      font-family: 'Playfair Display', serif;
+      font-size: 56px;
+      font-weight: 700;
+      color: #111;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .price-detail {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 1.75rem;
+    }
+
+    .price-includes {
+      list-style: none;
+      display: inline-block;
+      text-align: left;
+      margin-bottom: 1.75rem;
+    }
+
+    .price-includes li {
+      font-size: 14px;
+      padding: 5px 0 5px 22px;
+      position: relative;
+      color: #555;
+    }
+
+    .price-includes li::before {
+      content: '\2713';
+      position: absolute;
+      left: 0;
+      color: #1D4E89;
+      font-size: 13px;
+    }
+
+    /* ── FAQ ── */
+    .faq-item {
+      border-bottom: 1px solid #f0f0f0;
+      padding: 1.25rem 0;
+    }
+
+    .faq-item:first-of-type {
+      border-top: 1px solid #f0f0f0;
+    }
+
+    .faq-q {
+      font-size: 15px;
+      font-weight: 500;
+      color: #111;
+      margin-bottom: 8px;
+    }
+
+    .faq-a {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #666;
+      margin-bottom: 0;
+    }
+
+    /* ── Final CTA ── */
+    .final-cta {
+      text-align: center;
+      padding: 1rem 0 0;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 520px) {
+      .page-wrapper { padding: 2.5rem 1.25rem 4rem; }
+      .about-row { flex-direction: column; }
+      .price-box { padding: 2rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <!-- Hero -->
+    <p class="eyebrow">A course for early-stage Shopify brands</p>
+    <h1>You're paying to acquire customers<br>you're <em>not keeping</em>.</h1>
+    <p style="font-size: 17px; max-width: 580px; margin-bottom: 2rem;">Retention Ready is a five-module course that shows you exactly where your store is leaking revenue and gives you the practical fixes to stop it, before you spend another pound on ads.</p>
+    <a href="YOUR_PAYPAL_LINK_HERE" class="btn-primary">Get Retention Ready &mdash; &pound;97</a>
+    <p class="price-note">Instant access. PDF format. One-time payment via PayPal.</p>
+
+    <hr>
+
+    <!-- Problem -->
+    <p class="section-label">The problem</p>
+    <h2>Most early-stage brands have the same issue.</h2>
+    <p>They're spending on ads, testing creatives, and chasing lower CPCs while customers they already paid to acquire quietly disappear after one purchase.</p>
+    <p>It's not a traffic problem. It's a retention problem. And until you fix the foundation, scaling your ad spend just means losing money faster.</p>
+
+    <ul class="pain-list">
+      <li>Your post-purchase experience is a generic receipt email and then silence</li>
+      <li>You have an abandoned cart problem but no recovery flow running</li>
+      <li>Your email list is going cold because campaigns only go out when there's a sale</li>
+      <li>You're discounting to drive repeat purchases without knowing if the margin holds</li>
+      <li>You're not tracking the numbers that tell you whether retention is actually improving</li>
+    </ul>
+
+    <div class="callout">"A 5% improvement in retention can increase profit by 25 to 95%. You don't need more customers. You need to keep the ones you have."</div>
+
+    <hr>
+
+    <!-- What's inside -->
+    <p class="section-label">What's inside</p>
+    <h2>Five modules. Five areas where Shopify stores leak revenue.</h2>
+    <p>Each module includes a diagnosis section, the commercial case for fixing it, a concrete implementation guide, a quick-win action you can take in 48 hours, and a checklist to track what's live.</p>
+
+    <div class="modules-grid">
+      <div class="module-card">
+        <p class="module-num">Module 01</p>
+        <p class="module-title">First Impressions &amp; Onboarding</p>
+        <p class="module-desc">Build the welcome sequence that turns a first purchase into a second one.</p>
+      </div>
+      <div class="module-card">
+        <p class="module-num">Module 02</p>
+        <p class="module-title">Reducing Friction</p>
+        <p class="module-desc">Fix the checkout and product page gaps that quietly kill conversion and repeat purchase.</p>
+      </div>
+      <div class="module-card">
+        <p class="module-num">Module 03</p>
+        <p class="module-title">Email &amp; CRM Strategy</p>
+        <p class="module-desc">The full Klaviyo flow stack you need and a campaign approach that doesn't train your list to expect discounts.</p>
+      </div>
+      <div class="module-card">
+        <p class="module-num">Module 04</p>
+        <p class="module-title">Customer Service as Retention</p>
+        <p class="module-desc">Turn every support interaction into a loyalty decision you win.</p>
+      </div>
+      <div class="module-card full-width">
+        <p class="module-num">Module 05</p>
+        <p class="module-title">Metrics, Discounting &amp; the Numbers That Matter</p>
+        <p class="module-desc">LTV:CAC ratio, repurchase rate, discount discipline. The data habits that tell you what's working and what isn't.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Who it's for -->
+    <p class="section-label">Who it's for</p>
+    <h2>This is for you if...</h2>
+
+    <ul class="for-list">
+      <li>You're running a Shopify store and spending money on ads or acquisition</li>
+      <li>You know retention matters but haven't had time to build the infrastructure properly</li>
+      <li>You're using Klaviyo but suspect you're not getting close to its full value</li>
+      <li>You've set up some flows but aren't sure whether the gaps are costing you</li>
+      <li>You want a practical framework, not a generic course full of theory</li>
+    </ul>
+
+    <p><strong>This is not for you if</strong> you're looking for a beginner's guide to setting up Shopify, or if you're already running a sophisticated retention programme and hitting strong LTV numbers. This course is for brands that are live and growing but haven't yet locked down the retention fundamentals.</p>
+
+    <hr>
+
+    <!-- About -->
+    <p class="section-label">Who wrote it</p>
+    <div class="about-row">
+      <div class="about-avatar">SG</div>
+      <div>
+        <p class="about-name">Samantha Goodwin &mdash; LeithenLane</p>
+        <p class="about-text">I've spent 10+ years running a profitable DTC subscription brand, building the Shopify, Klaviyo, and Recharge systems myself, managing fulfilment in-house and through 3PLs, and learning where the revenue leaks are by watching them happen in real time.</p>
+        <p class="about-text">I'm not an agency. I'm an operator who's done this work, and I built this course to share the framework I actually use. Everything in it is practical, implementation-focused, and based on what works in a real business.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Price -->
+    <p class="section-label">Get access</p>
+    <div class="price-box">
+      <p class="price-label">Retention Ready</p>
+      <p class="price-amount">&pound;97</p>
+      <p class="price-detail">One-time payment. Yours to keep.</p>
+      <ul class="price-includes">
+        <li>Full five-module course in PDF format</li>
+        <li>Module checklists for every section</li>
+        <li>Quick-win actions for immediate implementation</li>
+        <li>Instant access on purchase</li>
+      </ul>
+      <br>
+      <a href="YOUR_PAYPAL_LINK_HERE" class="btn-primary">Buy now &mdash; &pound;97</a>
+      <p class="price-note" style="margin-top: 12px;">Secure checkout via PayPal</p>
+    </div>
+
+    <hr>
+
+    <!-- FAQ -->
+    <p class="section-label">Questions</p>
+    <h2 style="margin-bottom: 1.5rem;">A few things people ask</h2>
+
+    <div class="faq-item">
+      <p class="faq-q">Do I need to be using Klaviyo?</p>
+      <p class="faq-a">The email modules are written with Klaviyo in mind, since it's the platform most Shopify brands use for serious CRM work. The strategic frameworks apply to any email tool, but the specific flow logic assumes Klaviyo.</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">How long will it take to go through?</p>
+      <p class="faq-a">Plan for around 90 minutes per module if you're reading and taking action as you go. The goal is to implement, not just read, so build that time in. You can also work through individual modules if you already know where your biggest gap is.</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">I'm very early-stage. Is this relevant?</p>
+      <p class="faq-a">If you have customers coming through the door and you're spending anything on acquisition, yes. The earlier you build these foundations, the less revenue you lose in the meantime. The course is written for brands that are live and making sales, not pre-launch.</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">What if I want hands-on help, not a course?</p>
+      <p class="faq-a">The course is designed to be actionable on its own. If you work through it and decide you'd rather have someone implement alongside you, I offer an operations audit through LeithenLane. Get in touch via the contact page.</p>
+    </div>
+
+    <hr>
+
+    <!-- Final CTA -->
+    <div class="final-cta">
+      <a href="YOUR_PAYPAL_LINK_HERE" class="btn-primary">Get Retention Ready &mdash; &pound;97</a>
+      <p class="price-note" style="margin-top: 12px;">Instant access &middot; PDF &middot; One-time payment via PayPal</p>
+    </div>
+
+  </div>
+</body>
+</html>
